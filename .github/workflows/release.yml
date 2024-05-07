@@ -23,7 +23,7 @@ jobs:
       - name: Copy File with NodeJS Copy
         uses: Lyoko-Jeremie/js-copy-github-action@v2.3
         with:
-          source: */preview
+          source: /preview
           target: /tmp/release/preview
 
       - name: List archives

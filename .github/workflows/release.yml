@@ -22,11 +22,11 @@ jobs:
       
       - name: Delete Preview zip
         run: |
-          kubectl delete -f /tmp/release/preview.zip; done
+          kubectl delete -f /tmp/release/preview.zip
       
       - name: Make preview directory
         run: |
-          mkdir -p /tmp/release/preview; done
+          mkdir -p /tmp/release/preview
 
       - name: List archives
         run: |

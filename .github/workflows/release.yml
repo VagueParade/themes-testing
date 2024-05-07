@@ -24,7 +24,7 @@ jobs:
         run: |
           ls -1 /tmp/release
           
-       - name: Delete releases
+      - name: Delete releases
         uses: sgpublic/delete-release-action@v1.1
         with:
           release-drop: true

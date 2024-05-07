@@ -19,8 +19,14 @@ jobs:
       - name: Zip directories
         run: |
           mkdir -p /tmp/release && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); done
-          kubectl delete -f /tmp/release/preview.zip 
-          mkdir -p /tmp/release/preview
+      
+      - name: Delete Preview zip
+        run: |
+          kubectl delete -f /tmp/release/preview.zip; done
+      
+      - name: Make preview directory
+        run: |
+          mkdir -p /tmp/release/preview; done
 
       - name: List archives
         run: |

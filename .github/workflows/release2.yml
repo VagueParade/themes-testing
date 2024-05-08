@@ -18,7 +18,7 @@ jobs:
 
       - name: Zip directories
         run: |
-          mkdir -p /tmp/release/mnt/mmc/MUOS/theme && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/mnt/mmc/MUOS/theme/${dir_name}.zip" *); done
+          mkdir -p /tmp/release && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); done
 
       - name: List archives
         run: |

@@ -22,7 +22,7 @@ jobs:
           
       - name: Zip directories to one archive
         run: |
-          zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i "/tmp/release/*.zip"
+          zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i *
 
       - name: Add preview folder to complete archive
         run: |

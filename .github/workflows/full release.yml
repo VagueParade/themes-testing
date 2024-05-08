@@ -64,7 +64,7 @@ jobs:
           prerelease: false
           replacesArtifacts: false
           omitNameDuringUpdate: true
-          artifacts: "/tmp/release/Complete_Theme_Archive.zip"
+          artifacts: "/tmp/release/*"
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish Release

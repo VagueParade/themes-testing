@@ -19,10 +19,10 @@ jobs:
       - name: Zip directories
         run: |
           mkdir -p /tmp/release && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); done
-      
-      - name: List archives
+
+      - name: Delete preview zip
         run: |
-          ls -1 /tmp/release
+          rm /tmp/release/preview.zip
           
       - name: Zip directories to one archive
         run: |

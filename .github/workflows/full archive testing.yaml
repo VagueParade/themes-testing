@@ -32,6 +32,10 @@ jobs:
         run: |
           (cd /tmp/release && zip -r Complete_Theme_Archive.zip mnt)
 
+      - name: Create individual archive managers
+        run: |
+          for dir in */; do dir_name="${dir%/}"; (cd /tmp/release && zip -qq -r /mnt/mmc/MUOS/theme/"${dir_name}.zip" *); done
+
       - name: List archives
         run: |
           ls -1 /tmp/release

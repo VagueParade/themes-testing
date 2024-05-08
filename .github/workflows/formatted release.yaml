@@ -28,9 +28,9 @@ jobs:
         run: |
           mv preview /tmp/release/mnt/mmc/MUOS/theme
           
-      - name: Zip directories to one archive
+      - name: Zip mnt folder
         run: |
-          zip -r /tmp/release/Complete_Theme_Archive.zip /tmp/release
+          zip -r /tmp/release/Complete_Theme_Archive.zip /tmp/release/mnt
 
       - name: List archives
         run: |

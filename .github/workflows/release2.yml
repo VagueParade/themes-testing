@@ -26,7 +26,7 @@ jobs:
           
       - name: Zip directories to one archive
         run: |
-          zip -m /tmp/release/Complete_Theme_Archive.zip /tmp/release/*.zip
+          zip -m /tmp/release/Complete_Theme_Archive.zip *.zip
 
       - name: Add preview folder to complete archive
         run: |

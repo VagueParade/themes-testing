@@ -66,6 +66,7 @@ jobs:
       - name: Prepare Release
         uses: ncipollo/release-action@v1.14.0
         with:
+          name: "All Themes - Archive Manager"
           tag: "${{steps.date.outputs.date}}"
           allowUpdates: true
           draft: true
@@ -78,6 +79,7 @@ jobs:
       - name: Publish Release
         uses: ncipollo/release-action@v1.14.0
         with:
+          name: "All Themes - Archive Manager"
           tag: "${{steps.date.outputs.date}}"
           omitBodyDuringUpdate: true
           omitNameDuringUpdate: true

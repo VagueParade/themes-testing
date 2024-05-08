@@ -22,7 +22,7 @@ jobs:
 
       - name: Zip directories to one archive
         run: |
-          zip -qq -r "/tmp/release/fullarchive.zip" *
+          zip -qq -r "/tmp/release/Complete_Theme_Archive.zip" "/tmp/release/*"
 
       - name: List archives
         run: |

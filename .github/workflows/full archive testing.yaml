@@ -1,4 +1,4 @@
-name: muOS Individual Archive Manager Theme Release
+name: muOS Complete Archive Manager Theme Releases
 
 on: workflow_dispatch
 
@@ -30,7 +30,7 @@ jobs:
           
       - name: Zip mnt folder
         run: |
-          (cd /tmp/release && zip -r Complete_Theme_Archive.zip mnt)
+          (cd /tmp/release && zip -r _Complete_Theme_Archive.zip mnt)
 
       - name: Create individual archive managers
         run: |

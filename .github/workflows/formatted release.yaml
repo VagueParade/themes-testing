@@ -18,19 +18,19 @@ jobs:
 
       - name: Zip directories
         run: |
-          mkdir -p /tmp/release && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); done
+          mkdir -p /tmp/release/mnt/mmc/MUOS/theme && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/mnt/mmc/MUOS/theme/${dir_name}.zip" *); done
 
       - name: Delete preview zip
         run: |
-          rm /tmp/release/preview.zip
-          
-      - name: Zip directories to one archive
-        run: |
-          zip -j /tmp/release/Complete_Theme_Archive.zip /tmp/release/*.zip
+          rm /tmp/release/mnt/mmc/MUOS/theme/preview.zip
 
       - name: Add preview folder to complete archive
         run: |
-          zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i /preview/*
+          mv /preview/* /tmp/release/mnt/mmc/MUOS/theme
+          
+      - name: Zip directories to one archive
+        run: |
+          zip -j /tmp/release/Complete_Theme_Archive.zip /tmp/release/*
 
       - name: List archives
         run: |

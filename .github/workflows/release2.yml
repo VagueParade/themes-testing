@@ -18,7 +18,7 @@ jobs:
 
       - name: Zip directories
         run: |
-          mkdir -p /tmp/release && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); done
+          mkdir -p /tmp/release && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); (zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i /tmp/release/*.zip); done
 
       - name: Delete preview zip
         run: |

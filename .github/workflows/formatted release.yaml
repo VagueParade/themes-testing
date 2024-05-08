@@ -30,7 +30,7 @@ jobs:
           
       - name: Zip mnt folder
         run: |
-          zip -r /tmp/release/Complete_Theme_Archive.zip /tmp/release/mnt
+          zip -j /tmp/release/Complete_Theme_Archive.zip /tmp/release/mnt
 
       - name: List archives
         run: |

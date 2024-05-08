@@ -30,7 +30,7 @@ jobs:
           
       - name: Zip directories to one archive
         run: |
-          zip -j /tmp/release/Complete_Theme_Archive.zip /tmp/release/*
+          zip -r /tmp/release/Complete_Theme_Archive.zip /tmp/release
 
       - name: List archives
         run: |

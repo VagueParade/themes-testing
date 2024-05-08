@@ -18,7 +18,7 @@ jobs:
 
       - name: Zip directories
         run: |
-          mkdir -p /tmp/release && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); (zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i /tmp/release/*.zip); done
+          mkdir -p /tmp/release && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); done
 
       - name: Delete preview zip
         run: |
@@ -26,15 +26,12 @@ jobs:
           
       - name: Zip directories to one archive
         run: |
-          zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i *.zip
+          zip -m /tmp/release/Complete_Theme_Archive.zip /tmp/release/*.zip
 
       - name: Add preview folder to complete archive
         run: |
           zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i /preview/*
 
-      - name: Remove all zips except Complete Theme Archive
-        run: |
-          rm --help
 
       - name: List archives
         run: |

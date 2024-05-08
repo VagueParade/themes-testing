@@ -26,7 +26,7 @@ jobs:
 
       - name: Add preview folder to complete archive
         run: |
-          mv /preview/* /tmp/release/mnt/mmc/MUOS/theme
+          mv /preview /tmp/release/mnt/mmc/MUOS/theme
           
       - name: Zip directories to one archive
         run: |

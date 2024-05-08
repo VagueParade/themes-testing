@@ -20,12 +20,6 @@ jobs:
         run: |
           mkdir -p /tmp/release && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); done
 
-      - name: Copy File with NodeJS Copy
-        uses: Lyoko-Jeremie/js-copy-github-action@v2.3
-        with:
-          source: /preview
-          target: /tmp/release/preview
-
       - name: List archives
         run: |
           ls -1 /tmp/release

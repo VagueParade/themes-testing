@@ -19,14 +19,18 @@ jobs:
       - name: Zip directories
         run: |
           mkdir -p /tmp/release && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); done
+      
+      - name: List archives
+        run: |
+          ls -1 /tmp/release
           
       - name: Zip directories to one archive
         run: |
-          zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i /tmp/release/*.zip
+          zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i /tmp/release/*
 
       - name: Add preview folder to complete archive
         run: |
-          zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i /preview/
+          zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i /preview/*
 
       - name: List archives
         run: |

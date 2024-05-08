@@ -34,7 +34,7 @@ jobs:
 
       - name: Create individual archive managers
         run: |
-          for dir in */; do dir_name="${dir%/}"; (cd /tmp/release && zip -r "${dir_name}.zip" "/mnt/mmc/MUOS/theme/${dir_name}.zip"); done
+          for dir in */; do dir_name="${dir%/}"; (cd /tmp/release && zip -r "${dir_name}.zip" . -i "/mnt/mmc/MUOS/theme/${dir_name}.zip"); done
 
       - name: List archives
         run: |

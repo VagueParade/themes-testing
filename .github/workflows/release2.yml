@@ -22,11 +22,11 @@ jobs:
           
       - name: Zip directories to one archive
         run: |
-          zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i *
+          zip -qq -r /tmp/release/Complete_Theme_Archive.zip /tmp/release/*.zip
 
       - name: Add preview folder to complete archive
         run: |
-          zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i /preview/
+          zip -qq -r /tmp/release/Complete_Theme_Archive.zip /preview/
 
       - name: List archives
         run: |

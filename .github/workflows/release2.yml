@@ -34,7 +34,7 @@ jobs:
 
       - name: Remove all zips except Complete Theme Archive
         run: |
-          rm /tmp/release/*.zip . -x /tmp/release/Complete_Theme_Archive.zip
+          rm --help
 
       - name: List archives
         run: |

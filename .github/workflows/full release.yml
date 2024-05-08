@@ -1,4 +1,4 @@
-name: muOS Theme Release 2
+name: muOS Complete Theme Release
 
 on: workflow_dispatch
 
@@ -31,7 +31,6 @@ jobs:
       - name: Add preview folder to complete archive
         run: |
           zip -qq -r /tmp/release/Complete_Theme_Archive.zip . -i /preview/*
-
 
       - name: List archives
         run: |

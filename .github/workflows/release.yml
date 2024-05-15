@@ -1,4 +1,4 @@
-name: muOS Theme Release
+name: muOS Complete Archive Manager Theme Releases
 
 on: workflow_dispatch
 
@@ -18,14 +18,28 @@ jobs:
 
       - name: Zip directories
         run: |
-          mkdir -p /tmp/release && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); done
+          mkdir -p /tmp/release/mnt/mmc/MUOS/theme && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/mnt/mmc/MUOS/theme/${dir_name}.zip" *); done
 
-      - name: Copy File with NodeJS Copy
-        uses: Lyoko-Jeremie/js-copy-github-action@v2.3
-        with:
-          source: /preview
-          target: /tmp/release/preview
+      - name: Delete preview zip
+        run: |
+          rm /tmp/release/mnt/mmc/MUOS/theme/preview.zip
 
+      - name: Add preview folder to complete archive
+        run: |
+          mv preview /tmp/release/mnt/mmc/MUOS/theme
+          
+      - name: Zip mnt folder
+        run: |
+          (cd /tmp/release && zip -r _Complete_Theme_Archive.zip mnt)
+
+      - name: Create individual archive managers
+        run: |
+          for dir in */; do dir_name="${dir%/}"; (cd /tmp/release && zip -r "${dir_name}.zip" . -i "/mnt/mmc/MUOS/theme/${dir_name}.zip"); done
+     
+      - name: Insert preview images in the individual archives
+        run: |
+          for dir in */; do dir_name="${dir%/}"; (cd /tmp/release && zip -r "${dir_name}.zip" . -i "/mnt/mmc/MUOS/theme/preview/${dir_name}.png"); done
+     
       - name: List archives
         run: |
           ls -1 /tmp/release
@@ -52,6 +66,7 @@ jobs:
       - name: Prepare Release
         uses: ncipollo/release-action@v1.14.0
         with:
+          name: "All Themes - Archive Manager"
           tag: "${{steps.date.outputs.date}}"
           allowUpdates: true
           draft: true
@@ -64,6 +79,7 @@ jobs:
       - name: Publish Release
         uses: ncipollo/release-action@v1.14.0
         with:
+          name: "All Themes - Archive Manager"
           tag: "${{steps.date.outputs.date}}"
           omitBodyDuringUpdate: true
           omitNameDuringUpdate: true

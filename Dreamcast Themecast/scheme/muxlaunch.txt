@@ -1,5 +1,5 @@
 [background]
-BACKGROUND=000000
+BACKGROUND=95afca
 BACKGROUND_ALPHA=0
 
 [font]

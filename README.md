@@ -9,4 +9,4 @@ ff
 
 
 
-![GarstardOS](/preview/GarstardOS.png)(https://github.com/VagueParade/themes-testing/releases/download/2024-05-16_1528/GarstardOS.zip)
+![GarstardOS](https://github.com/VagueParade/themes-testing/releases/download/2024-05-16_1528/GarstardOS.zip)

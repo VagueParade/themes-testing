@@ -4,6 +4,6 @@ Here you can download all the themes, made by members of our community. Join the
 
 |              |   |   |
 :-------------------------:|:-------------------------:|:-------------------------:
-![]()  |  [Theme Name]()
-![]()  |  [Theme Name]()
-![]()  |  [Theme Name]()
+![]() [Theme Name]() | ![]() [Theme Name]() | ![]() [Theme Name]()
+![]() [Theme Name]() | ![]() [Theme Name]() | ![]() [Theme Name]()
+![]() [Theme Name]() | ![]() [Theme Name]() | ![]() [Theme Name]()

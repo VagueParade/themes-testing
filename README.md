@@ -1,3 +1,9 @@
 # muOS Theme Repository
 
-Find our community here; [muos.dev](https://muos.dev/#community).
+Here you can download all the themes, made by members of our community. Join the community here; [muos.dev](https://muos.dev/#community).
+
+|              |   |   |
+:-------------------------:|:-------------------------:|:-------------------------:
+![]()  |  [Theme Name]()
+![]()  |  [Theme Name]()
+![]()  |  [Theme Name]()

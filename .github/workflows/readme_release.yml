@@ -1,4 +1,4 @@
-name: README + Theme Release
+name: README Delete + Theme Release
 
 on: workflow_dispatch
 

@@ -1,4 +1,4 @@
-name: muOS Complete Archive Manager Theme Releases
+name: README + Theme Release
 
 on: workflow_dispatch
 
@@ -92,3 +92,12 @@ jobs:
         id: info
         run: |
           echo "Published themes: ${{steps.date.outputs.date}} to: https://github.com/${{ steps.env.outputs.RELEASE_ORG}}/${{ steps.env.outputs.RELEASE_REPO}}"
+
+      - name: Delete old README file
+        run: |
+          rm -f README.md
+
+      - name: Commit README removal
+        run: |
+          git commit -m "chore: clean repo"
+          git push

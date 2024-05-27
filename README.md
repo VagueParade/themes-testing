@@ -1,6 +1,6 @@
 # muOS Theme Repository
 
-Download all available muOS themes here! Made by the amazing community on our Discord.
+Download all available muOS themes here! Made by the amazing community on our Discord. Find us at [https://muos.dev/.](https://muos.dev/#community).
 
 |             |   |  |
 :-------------------------:|:-------------------------:|:-------------------------:

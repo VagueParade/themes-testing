@@ -101,6 +101,6 @@ jobs:
         run: |
           git config --global user.email "VagueParade@users.noreply.github.com"
           git config --global user.name "VagueParade"
-          git add/rm README.md
+          git rm README.md
           git commit -m "chore: clean repo"
           git push

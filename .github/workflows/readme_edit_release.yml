@@ -18,7 +18,8 @@ jobs:
 
       - name: Update README.md
         run: |
-          sed -i 's/<releasetable>/'HELLO'/' README.md
+          sed -i 's/<releasetable>/'HE
+          knowck knowck LLO'/' README.md
           git config user.email "VagueParade@users.noreply.github.com"
           git config user.name "VagueParade"
           git commit -am "Automated report"

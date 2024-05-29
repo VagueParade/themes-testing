@@ -18,7 +18,7 @@ jobs:
 
       - name: Update README.md
         run: |
-          sed -i 's/<releasetable>/'![Analogue-Arimo](/preview/Analogue-Arimo.png)'/' README.md
+          sed -i 's/<releasetable>/![Analogue-Arimo](/preview/Analogue-Arimo.png)/' README.md
           git config user.email "VagueParade@users.noreply.github.com"
           git config user.name "VagueParade"
           git commit -am "Automated report"

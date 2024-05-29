@@ -15,5 +15,31 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        
+      - name: Delete old README file
+        run: |
+          .
+          
+      - name: Create new README file
+        run: |
+          .
+          
+      - name: Insert intro text into README file
+        run: |
+          .   
+          
+      - name: Specify directory names and insert names into README
+        run: |
+          for dir in */; do dir_name="${dir%/}";
 
-      - name: 
+      - name: Specify directory names and insert pictures into README
+        run: |
+          for dir in */; do dir_name="${dir%/}";
+
+      - name: Specify directory names and insert links into README
+        run: |
+          for dir in */; do dir_name="${dir%/}";
+
+      - name: Commit changes
+        run: |
+          

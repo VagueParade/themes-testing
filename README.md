@@ -7,7 +7,7 @@ Here you can download all the themes, made by members of the muOS community.
 
 Drop any of these .zip files into your device's ARCHIVE folder, using the on-device Archive Manager application to install them.
 
-| ![Analogue-Arimo](preview/Analogue-Arimo.png) [Analogue-Arimo](https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Analogue-Arimo.zip) <br><sup>by: Cheema OTB (original: Aemiii91)</sup> | ![Analogue](preview/Analogue.png) [Analogue](https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Analogue.zip) <br><sup>by: Cheema OTB (original: Aemiii91)</sup>  | ![Art Book Next v1](<preview/Art Book Next v1.png>) [Art Book Next v1](https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Art.Book.Next.v1.zip) <br><sup>by: ciskao (original: alphatoanant)</sup>  |
+|   |   |   |
 | :-----------------------------------------------------------: | :-----------------------------------------------------------: | :-----------------------------------------------------------: |
 | ![Analogue-Arimo](preview/Analogue-Arimo.png) [Analogue-Arimo](https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Analogue-Arimo.zip) <br><sup>by: Cheema OTB (original: Aemiii91)</sup> | ![Analogue](preview/Analogue.png) [Analogue](https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Analogue.zip) <br><sup>by: Cheema OTB (original: Aemiii91)</sup>  | ![Art Book Next v1](<preview/Art Book Next v1.png>) [Art Book Next v1](https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Art.Book.Next.v1.zip) <br><sup>by: ciskao (original: alphatoanant)</sup>  |
 | ![Art Book Next v2](<preview/Art Book Next v2.png>) [Art Book Next v2](https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Art.Book.Next.v2.zip) <br><sup>by: ciskao (original: alphatoanant)</sup> | ![Beanz](preview/Beanz.png) [Beanz](https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Beanz.zip) <br><sup>by: VagueParade</sup>  | ![Blade](preview/Blade.png) [Blade](https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Blade.zip) <br><sup>by: LMarcoMiranda</sup>  |
@@ -37,4 +37,66 @@ Drop any of these .zip files into your device's ARCHIVE folder, using the on-dev
 
 |   |   |   |
 | :-----------------------------------------------------------: | :-----------------------------------------------------------: | :-----------------------------------------------------------: |
-|   |   |   |
+|  <tablecell001>  |  <tablecell002> |  <tablecell003> |
+|  <tablecell004>  |  <tablecell005> |  <tablecell006> |
+|  <tablecell007>  |  <tablecell008> |  <tablecell009> |
+|  <tablecell010>  |  <tablecell011> |  <tablecell012> |
+|  <tablecell013>  |  <tablecell014> |  <tablecell015> |
+|  <tablecell016>  |  <tablecell017> |  <tablecell018> |
+|  <tablecell019>  |  <tablecell020> |  <tablecell021> |
+|  <tablecell022>  |  <tablecell023> |  <tablecell024> |
+|  <tablecell025>  |  <tablecell026> |  <tablecell027> |
+|  <tablecell028>  |  <tablecell029> |  <tablecell030> |
+|  <tablecell031>  |  <tablecell032> |  <tablecell033> |
+|  <tablecell034>  |  <tablecell035> |  <tablecell036> |
+|  <tablecell037>  |  <tablecell038> |  <tablecell039> |
+|  <tablecell040>  |  <tablecell041> |  <tablecell042> |
+|  <tablecell043>  |  <tablecell044> |  <tablecell045> |
+|  <tablecell046>  |  <tablecell047> |  <tablecell048> |
+|  <tablecell049>  |  <tablecell050> |  <tablecell051> |
+|  <tablecell052>  |  <tablecell053> |  <tablecell054> |
+|  <tablecell055>  |  <tablecell056> |  <tablecell057> |
+|  <tablecell058>  |  <tablecell059> |  <tablecell060> |
+|  <tablecell061>  |  <tablecell062> |  <tablecell063> |
+|  <tablecell064>  |  <tablecell065> |  <tablecell066> |
+|  <tablecell067>  |  <tablecell068> |  <tablecell069> |
+|  <tablecell070>  |  <tablecell071> |  <tablecell072> |
+|  <tablecell073>  |  <tablecell074> |  <tablecell075> |
+|  <tablecell076>  |  <tablecell077> |  <tablecell078> |
+|  <tablecell079>  |  <tablecell080> |  <tablecell081> |
+|  <tablecell082>  |  <tablecell083> |  <tablecell084> |
+|  <tablecell085>  |  <tablecell086> |  <tablecell087> |
+|  <tablecell088>  |  <tablecell089> |  <tablecell090> |
+|  <tablecell091>  |  <tablecell092> |  <tablecell093> |
+|  <tablecell094>  |  <tablecell095> |  <tablecell096> |
+|  <tablecell097>  |  <tablecell098> |  <tablecell099> |
+|  <tablecell100>  |  <tablecell101> |  <tablecell102> |
+|  <tablecell103>  |  <tablecell104> |  <tablecell105> |
+|  <tablecell106>  |  <tablecell107> |  <tablecell108> |
+|  <tablecell109>  |  <tablecell110> |  <tablecell111> |
+|  <tablecell112>  |  <tablecell113> |  <tablecell114> |
+|  <tablecell115>  |  <tablecell116> |  <tablecell117> |
+|  <tablecell118>  |  <tablecell119> |  <tablecell120> |
+|  <tablecell121>  |  <tablecell122> |  <tablecell123> |
+|  <tablecell124>  |  <tablecell125> |  <tablecell126> |
+|  <tablecell127>  |  <tablecell128> |  <tablecell129> |
+|  <tablecell130>  |  <tablecell131> |  <tablecell132> |
+|  <tablecell133>  |  <tablecell134> |  <tablecell135> |
+|  <tablecell136>  |  <tablecell137> |  <tablecell138> |
+|  <tablecell139>  |  <tablecell140> |  <tablecell141> |
+|  <tablecell142>  |  <tablecell143> |  <tablecell144> |
+|  <tablecell145>  |  <tablecell146> |  <tablecell147> |
+|  <tablecell148>  |  <tablecell149> |  <tablecell150> |
+|  <tablecell151>  |  <tablecell152> |  <tablecell153> |
+|  <tablecell154>  |  <tablecell155> |  <tablecell156> |
+|  <tablecell157>  |  <tablecell158> |  <tablecell159> |
+|  <tablecell160>  |  <tablecell161> |  <tablecell162> |
+|  <tablecell163>  |  <tablecell164> |  <tablecell165> |
+|  <tablecell166>  |  <tablecell167> |  <tablecell168> |
+|  <tablecell169>  |  <tablecell170> |  <tablecell171> |
+|  <tablecell172>  |  <tablecell173> |  <tablecell174> |
+|  <tablecell175>  |  <tablecell176> |  <tablecell177> |
+|  <tablecell178>  |  <tablecell179> |  <tablecell180> |
+|  <tablecell181>  |  <tablecell182> |  <tablecell183> |
+|  <tablecell184>  |  <tablecell185> |  <tablecell186> |
+|  <tablecell187>  |  <tablecell188> |  <tablecell189> |

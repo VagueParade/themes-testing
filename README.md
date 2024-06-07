@@ -35,8 +35,8 @@ Drop any of these .zip files into your device's ARCHIVE folder, using the on-dev
 
 
 
-|   |   |   |
-| :-----------------------------------------------------------: | :-----------------------------------------------------------: | :-----------------------------------------------------------: |
+|                  |                 |                 |
+| :--------------: | :-------------: | :-------------: |
 |  <tablecell001>  |  <tablecell002> |  <tablecell003> |
 |  <tablecell004>  |  <tablecell005> |  <tablecell006> |
 |  <tablecell007>  |  <tablecell008> |  <tablecell009> |

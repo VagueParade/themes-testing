@@ -2,6 +2,7 @@
 layout: default
 title: Themes
 permalink: /themes
+nav_enabled: false
 nav_order: 4
 has_children: false
 ---

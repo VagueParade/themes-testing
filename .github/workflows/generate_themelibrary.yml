@@ -27,7 +27,7 @@ jobs:
           
       - name: Convert directory names to versions with dots instead of spaces
         run: |
-          for dir in */; do dir_name="${dir%/}"; (echo "${dir_name}" | tr [:space:] [.]); done
+          for dir in */; do dir_name="${dir%/}"; (echo "${dir_name}" | tr [:space:] "."); done
 
       - name: Show directory names
         run: |

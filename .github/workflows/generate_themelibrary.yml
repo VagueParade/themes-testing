@@ -31,6 +31,46 @@ jobs:
           
       - name: Show directory names
         run: |
+          ls -1 /bin
+
+      - name: Show directory names
+        run: |
+          ls -1 /boot
+          
+      - name: Show directory names
+        run: |
+          ls -1 /data
+
+      - name: Show directory names
+        run: |
+          ls -1 /dev
+          
+      - name: Show directory names
+        run: |
+          ls -1 /etc
+
+      - name: Show directory names
+        run: |
+          ls -1 /home
+          
+      - name: Show directory names
+        run: |
+          ls -1 /imagegeneration
+          
+      - name: Show directory names
+        run: |
+          ls -1 /media
+          
+      - name: Show directory names
+        run: |
+          ls -1 /usr
+
+      - name: Show directory names
+        run: |
+          ls -1 /var
+          
+      - name: Show directory names
+        run: |
           ls -1 /mnt
 
       - name: Show directory names

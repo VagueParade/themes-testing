@@ -27,7 +27,11 @@ jobs:
           
       - name: Show directory names
         run: |
-          ls -1 
+          ls -1 /tmp/release
+
+      - name: Show directory names
+        run: |
+          ls -1 /tmp
           
 
 # for dir in */; do dir_name="${dir%/}";

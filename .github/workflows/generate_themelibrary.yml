@@ -19,7 +19,7 @@ jobs:
           
       - name: Generate text file with all directory names
         run: |
-          for dir in */; do dir_name="${dir%/}"; (cd /tmp && touch "${dir_name}.txt"); done
+          mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd /tmp/page && touch "${dir_name}.txt"); done
           
       - name: Convert directory names to versions with dots instead of spaces
         run: |
@@ -31,7 +31,7 @@ jobs:
 
       - name: Show directory names
         run: |
-          ls -1 /tmp
+          ls -1 /tmp/page
           
 
 # for dir in */; do dir_name="${dir%/}";

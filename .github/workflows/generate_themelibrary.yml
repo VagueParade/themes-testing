@@ -23,7 +23,7 @@ jobs:
 
       - name: Show directory names
         run: |
-          list "${dir_name}"
+          ls "${dir_name}"
           
 
 # for dir in */; do dir_name="${dir%/}";

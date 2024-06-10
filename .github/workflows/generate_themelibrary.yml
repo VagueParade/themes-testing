@@ -39,7 +39,7 @@ jobs:
 
       - name: Take txt names and insert the theme name variable
         run: |
-          for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && sed -i '1 ${dir_name}' "/tmp/page/${dir_name}.txt"); done
+          for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && sed -i '1 dir_name' "/tmp/page/${dir_name}.txt"); done
 
 # for dir in */; do dir_name="${dir%/}";
 

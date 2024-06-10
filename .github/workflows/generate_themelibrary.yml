@@ -29,18 +29,13 @@ jobs:
         run: |
           for dir in */; do dir_name="${dir%/}"; (echo "${dir_name}" | tr [:space:] "."); done
 
-      - name: Echo test
-        run: |
-          echo "${dir_name}"
-
-      - name: Show directory names
-        run: |
-          ls -1 ${dir_name}
-
       - name: Show directory names
         run: |
           ls -1 /tmp/page
-          
+
+      - name: Take txt names and insert the theme name variable
+        run: |
+          for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && cat >>"/tmp/page/${dir_name}.txt" "$dir_name"); done
 
 # for dir in */; do dir_name="${dir%/}";
 

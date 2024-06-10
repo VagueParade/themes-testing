@@ -31,7 +31,7 @@ jobs:
           
       - name: Show directory names
         run: |
-          ls -1 /bin
+          ls -1 /root
 
       - name: Show directory names
         run: |

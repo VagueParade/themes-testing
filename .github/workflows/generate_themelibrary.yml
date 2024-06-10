@@ -24,10 +24,14 @@ jobs:
       - name: Show directory names
         run: |
           ls -1 ${dir_name}
+
+      - name: Show directory names
+        run: |
+          ls -1 /
           
       - name: Show directory names
         run: |
-          ls -1 /tmp/release
+          ls -1 /mnt
 
       - name: Show directory names
         run: |

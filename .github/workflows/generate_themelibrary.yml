@@ -1,0 +1,31 @@
+name: Theme Library Generate
+
+on: workflow_dispatch
+
+concurrency: 
+  group: release
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      repository-projects: write
+    steps:
+      - name: Convert directory names to versions with dots instead of spaces
+        run: |
+          for dir in */; do dir_name="${dir%/}"; (echo "${dir_name}" | tr [:space:] [.]); done
+
+      - name: Show directory names
+        run: |
+          echo "${dir_name}"
+          
+
+# for dir in */; do dir_name="${dir%/}";
+
+# ${dir_name} <- take all spaces and convert to .
+# echo "${dir_name}" | tr \ \ .
+# echo "${dir_name}" | tr [:space:] []
+
+# https://github.com/MustardOS/theme/releases/download/${{steps.date.outputs.date}}/Analogue-Arimo.zip

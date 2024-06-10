@@ -13,9 +13,13 @@ jobs:
       pull-requests: write
       repository-projects: write
     steps:
+      - name: Show directory names
+        run: |
+          ls -1 /tmp
+          
       - name: Generate text file with all directory names
         run: |
-          for dir in */; do dir_name="${dir%/}"; (cd /tmp/release && touch "${dir_name}.txt"); done
+          for dir in */; do dir_name="${dir%/}"; (cd /tmp && touch "${dir_name}.txt"); done
           
       - name: Convert directory names to versions with dots instead of spaces
         run: |
@@ -27,7 +31,7 @@ jobs:
 
       - name: Show directory names
         run: |
-          ls -1 /tmp/release
+          ls -1 /tmp
           
 
 # for dir in */; do dir_name="${dir%/}";

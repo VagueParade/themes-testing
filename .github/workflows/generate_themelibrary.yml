@@ -24,6 +24,10 @@ jobs:
       - name: Generate text file with all directory names
         run: |
           mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && touch "/tmp/page/${dir_name}.txt"); done
+
+      - name: Delete preview text file
+        run: |
+          rm /tmp/page/preview.txt
           
       - name: Convert directory names to versions with dots instead of spaces
         run: |
@@ -35,7 +39,7 @@ jobs:
 
       - name: Take txt names and insert the theme name variable
         run: |
-          for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && sed -i "$dir_name" "/tmp/page/${dir_name}.txt"); done
+          for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && sed -i '$dir_name' "/tmp/page/${dir_name}.txt"); done
 
 # for dir in */; do dir_name="${dir%/}";
 

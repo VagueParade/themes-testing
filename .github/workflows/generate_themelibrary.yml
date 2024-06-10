@@ -29,6 +29,10 @@ jobs:
         run: |
           for dir in */; do dir_name="${dir%/}"; (echo "${dir_name}" | tr [:space:] "."); done
 
+      - name: Echo test
+        run: |
+          echo "${dir_name}"
+
       - name: Show directory names
         run: |
           ls -1 ${dir_name}

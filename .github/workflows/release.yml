@@ -1,8 +1,8 @@
 name: muOS Complete Archive Manager Theme Releases
 
 on:
-  push:
-    branches: ["main"]
+  #push:
+  #  branches: ["main"]
   workflow_dispatch:
     
 concurrency: 

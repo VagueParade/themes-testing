@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Generate text file with all directory names
         run: |
-          for dir in */; do echo "$dir"; done
+          for dir in */; do dir_name="${dir%/}"; 
           
       - name: Convert directory names to versions with dots instead of spaces
         run: |
@@ -23,7 +23,7 @@ jobs:
 
       - name: Show directory names
         run: |
-          ls ${dir_name}
+          ls -1 ${dir_name}
           
 
 # for dir in */; do dir_name="${dir%/}";

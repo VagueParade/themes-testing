@@ -56,7 +56,7 @@ jobs:
 
       - name: Ensure all line breaks are now deleted
         run: |
-          for dir in */; do dir_name="${dir%/}"; perl -i -0pe 's/\n\Z//' "/tmp/txt/${dir_name}.txt"; done
+          for dir in */; do dir_name="${dir%/}"; tr -d '\n' < "/tmp/txt/${dir_name}.txt" > "/tmp/page/${dir_name}.txt"; done
 
       - name: Delete preview text file
         run: |
@@ -65,11 +65,11 @@ jobs:
 
       - name: See if this worked?
         run: |
-          more "/tmp/txt/Retro Glow Blue.txt"
+          more "/tmp/page/Retro Glow Blue.txt"
 
       - name: See if this worked?
         run: |
-          more "/tmp/txt/muOS - Classic.txt"
+          more "/tmp/page/muOS - Classic.txt"
 
 #echo "Welcome GFG" > output.txt
 #This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.

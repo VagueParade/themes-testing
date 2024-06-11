@@ -47,7 +47,7 @@ jobs:
 
       - name: Replace line breaks with space
         run: |
-          cd /tmp/page && sed -i 's/\n/ /g' *
+          sed -i 's/\n/ /g' "/tmp/page/*.txt"
 
       - name: Show directory names
         run: |

@@ -69,7 +69,7 @@ jobs:
 
       - name: Ensure all line breaks are now deleted
         run: |
-          for dir in */; do dir_name="${dir%/}"; tr "\n" " " < "/tmp/txt/${dir_name}.txt" > "/tmp/page/${dir_name}.txt"; done
+          for dir in */; do dir_name="${dir%/}"; tr -d "\n\r" < "/tmp/txt/${dir_name}.txt" > "/tmp/page/${dir_name}.txt"; done
 
       - name: Delete preview text file
         run: |

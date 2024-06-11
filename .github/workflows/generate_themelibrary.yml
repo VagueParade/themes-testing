@@ -49,6 +49,10 @@ jobs:
         run: |
           cd /tmp/page && tr '\n' ' ' < "Retro Glow Blue.txt"
 
+      - name: See if this worked?
+        run: |
+          cat "/tmp/page/Retro Glow Blue.txt"
+
       - name: Show directory names
         run: |
           ls -1 /tmp/page

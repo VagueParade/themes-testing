@@ -27,7 +27,7 @@ jobs:
           
       - name: Generate text file with all directory names, with directory name inside
         run: |
-          mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && echo "${dir_name}" > "/tmp/page/${dir_name}.txt"); done
+          mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && echo "${dir_name} <br>https://raw.githubusercontent.com/MustardOS/theme/main/preview/${dir_name}.png" > "/tmp/page/${dir_name}.txt"); done
 
       - name: Delete preview text file
         run: |
@@ -40,10 +40,6 @@ jobs:
       - name: Show directory names
         run: |
           ls -1 /tmp/page
-
-      #- name: Take txt names and insert the theme name variable
-      #  run: |
-      #    for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && sed -i '1 dir_name' "/tmp/page/${dir_name}.txt"); done
 
       - name: See if this worked?
         run: |

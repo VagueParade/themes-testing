@@ -41,6 +41,10 @@ jobs:
 #| ![$dir_name](https://raw.githubusercontent.com/MustardOS/theme/main/preview/$dir_name.png) <br>[$dir_name]
 #(https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Analogue-Arimo.zip) <br><sup>by: Cheema OTB (original: Aemiii91)</sup> 
 
+      - name: Ensure all line breaks are now deleted
+        run: |
+          for dir in */; do dir_name="${dir%/}"; echo "e" >> "/tmp/page/${dir_name}.txt"; done
+          
       - name: Replace line breaks with space
         run: |
           mkdir -p /tmp/txt && for dir in */; do dir_name="${dir%/}"; tr "\n" " " < "/tmp/page/${dir_name}.txt" > "/tmp/txt/${dir_name}.txt"; done
@@ -52,10 +56,6 @@ jobs:
       - name: See if this worked?
         run: |
           cat "/tmp/txt/Retro Glow Blue.txt"
-          
-      - name: Ensure all line breaks are now deleted
-        run: |
-          for dir in */; do dir_name="${dir%/}"; echo "e" >> "/tmp/txt/${dir_name}.txt"; done
 
       - name: Ensure all line breaks are now deleted
         run: |

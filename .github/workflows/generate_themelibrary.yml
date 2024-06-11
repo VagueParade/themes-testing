@@ -45,6 +45,10 @@ jobs:
         run: |
           rm /tmp/page/preview.txt
 
+      - name: Replace line breaks with space
+        run: |
+          cd /tmp/page && sed -i 's/\n/ /g' *
+
       - name: Show directory names
         run: |
           ls -1 /tmp/page

@@ -39,33 +39,11 @@ jobs:
 
 #  && cat "${dir_name}/credits.txt >> "/tmp/page/${dir_name}.txt"
 #| ![$dir_name](https://raw.githubusercontent.com/MustardOS/theme/main/preview/$dir_name.png) <br>[$dir_name]
-#(https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Analogue-Arimo.zip) <br><sup>by: Cheema OTB (original: Aemiii91)</sup> 
-
-      - name: Ensure all line breaks are now deleted
-        run: |
-          for dir in */; do dir_name="${dir%/}"; echo "e" >> "/tmp/page/${dir_name}.txt"; done
+#(https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Analogue-Arimo.zip) <br><sup>by: Cheema OTB (original: Aemiii91)</sup>
           
       - name: Replace line breaks with space
         run: |
           mkdir -p /tmp/txt && for dir in */; do dir_name="${dir%/}"; tr "\n" " " < "/tmp/page/${dir_name}.txt" > "/tmp/txt/${dir_name}.txt"; done
-
-      - name: See if this worked?
-        run: |
-          cat "/tmp/page/muOS - Classic.txt"
-
-      #sed -i '2d' *.txt
-
-      - name: See if this worked?
-        run: |
-          cat "/tmp/txt/muOS - Classic.txt"
-
-      - name: Delete second line of all files
-        run: |
-          for dir in */; do dir_name="${dir%/}"; (cd "${dir_name}" && sed -i "2d" "/tmp/txt/${dir_name}.txt"); done
-
-      - name: See if this worked?
-        run: |
-          cat "/tmp/txt/muOS - Classic.txt"
 
       - name: Ensure all line breaks are now deleted
         run: |
@@ -91,13 +69,6 @@ jobs:
         run: |
           more "/tmp/page/muOS - Classic.txt"
 
-      - name: See if this worked?
-        run: |
-          more "/tmp/txt/Retro Glow Blue.txt"
-
-      - name: See if this worked?
-        run: |
-          more "/tmp/txt/muOS - Classic.txt"
 
 #echo "Welcome GFG" > output.txt
 #This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.

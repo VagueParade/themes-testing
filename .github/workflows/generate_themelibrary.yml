@@ -44,11 +44,6 @@ jobs:
       - name: Replace line breaks with space
         run: |
           mkdir -p /tmp/txt && for dir in */; do dir_name="${dir%/}"; tr "\n" " " < "/tmp/page/${dir_name}.txt" > "/tmp/txt/${dir_name}.txt"; done
-          
-      - name: Delete preview text file
-        run: |
-          rm /tmp/page/preview.txt
-          rm /tmp/txt/preview.txt
 
       - name: See if this worked?
         run: |
@@ -58,6 +53,15 @@ jobs:
       - name: Show directory names
         run: |
           ls -1 /tmp/txt
+
+      - name: Ensure all line breaks are now deleted
+        run: |
+          for dir in */; do dir_name="${dir%/}"; perl -i -0pe 's/\n\Z//' "/tmp/txt/${dir_name}.txt"; done
+
+      - name: Delete preview text file
+        run: |
+          rm /tmp/page/preview.txt
+          rm /tmp/txt/preview.txt
 
       - name: See if this worked?
         run: |

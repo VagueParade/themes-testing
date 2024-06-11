@@ -53,6 +53,8 @@ jobs:
         run: |
           cat "/tmp/page/muOS - Classic.txt"
 
+      #sed -i '2d' *.txt
+
       - name: See if this worked?
         run: |
           cat "/tmp/txt/muOS - Classic.txt"

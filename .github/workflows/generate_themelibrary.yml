@@ -69,6 +69,13 @@ jobs:
         run: |
           more "/tmp/page/muOS - Classic.txt"
 
+      - name: make all file names uppercase
+        run: |
+          for f in /tmp/page; do mv -- "$f" "$(tr [:lower:] [:upper:] <<< "$f")" ; done
+
+      - name: Show directory names
+        run: |
+          ls -1 /tmp/page
 
 #echo "Welcome GFG" > output.txt
 #This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.

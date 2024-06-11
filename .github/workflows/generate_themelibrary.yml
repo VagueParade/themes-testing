@@ -57,11 +57,15 @@ jobs:
 
       - name: Show directory names
         run: |
-          ls -1 /tmp/page
+          ls -1 /tmp/txt
 
       - name: See if this worked?
         run: |
-          more "/tmp/page/Retro Glow Blue.txt"
+          more "/tmp/txt/Retro Glow Blue.txt"
+
+      - name: See if this worked?
+        run: |
+          more "/tmp/txt/muOS - Classic.txt"
 
 #echo "Welcome GFG" > output.txt
 #This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.

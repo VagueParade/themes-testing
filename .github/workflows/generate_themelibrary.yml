@@ -21,9 +21,13 @@ jobs:
         run: |
           ls -1 /tmp
           
-      - name: Generate text file with all directory names
+      #- name: Generate text file with all directory names
+      #  run: |
+      #    mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && touch "/tmp/page/${dir_name}.txt"); done 
+          
+      - name: Generate text file with all directory names, with directory name inside
         run: |
-          mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && touch "/tmp/page/${dir_name}.txt"); done
+          mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && echo "${dir_name}" > "/tmp/page/${dir_name}.txt"); done
 
       - name: Delete preview text file
         run: |
@@ -37,10 +41,18 @@ jobs:
         run: |
           ls -1 /tmp/page
 
-      - name: Take txt names and insert the theme name variable
-        run: |
-          for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && sed -i '1 dir_name' "/tmp/page/${dir_name}.txt"); done
+      #- name: Take txt names and insert the theme name variable
+      #  run: |
+      #    for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && sed -i '1 dir_name' "/tmp/page/${dir_name}.txt"); done
 
+      - name: See if this worked?
+        run: |
+          more /tmp/page/Terminal.txt
+
+#echo "Welcome GFG" > output.txt
+#This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.
+#If we want to append the output in an existing file, we use `>>` instead of `>`.
+          
 # for dir in */; do dir_name="${dir%/}";
 
 # ${dir_name} <- take all spaces and convert to .

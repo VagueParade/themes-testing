@@ -47,7 +47,7 @@ jobs:
 
       - name: Replace line breaks with space
         run: |
-          cd /tmp/page && tr '\n' ' ' < *
+          cd /tmp/page && tr '\n' ' ' < "Retro Glow Blue.txt"
 
       - name: Show directory names
         run: |

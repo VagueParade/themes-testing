@@ -61,7 +61,7 @@ jobs:
 
       - name: Delete second line of all files
         run: |
-          sed -i '2d' "/tmp/txt/*.txt"
+          for dir in */; do dir_name="${dir%/}"; sed -i '2d' "/tmp/txt/${dir_name}.txt"; done
 
       - name: See if this worked?
         run: |

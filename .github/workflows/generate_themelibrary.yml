@@ -47,7 +47,7 @@ jobs:
 
       - name: Replace line breaks with space
         run: |
-          cd /tmp/page && sed -i "s/ /SPACE/g" "Retro Glow Blue.txt"
+          cd /tmp/page && sed -i "s/(\n)/ /g" "Retro Glow Blue.txt"
 
       - name: See if this worked?
         run: |

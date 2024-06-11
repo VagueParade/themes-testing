@@ -20,6 +20,10 @@ jobs:
       - name: Show directory names
         run: |
           ls -1
+
+      - name: Show directory names
+        run: |
+          cat "Analogue-Arimo/credits.txt"
           
       - name: Generate text file with all directory names, with directory name inside
         run: |

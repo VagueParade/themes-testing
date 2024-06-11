@@ -71,7 +71,7 @@ jobs:
 
       - name: make all file names uppercase
         run: |
-          for f in /tmp/page; do mv -- "$f" "$(tr [:lower:] [:upper:] <<< "$f")" ; done
+          cd /tmp/page && for f in *; do mv -- "$f" "$(tr [:lower:] [:upper:] <<< "$f")" ; done
 
       - name: Show directory names
         run: |

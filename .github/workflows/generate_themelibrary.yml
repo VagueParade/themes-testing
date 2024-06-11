@@ -59,6 +59,14 @@ jobs:
         run: |
           cat "/tmp/txt/muOS - Classic.txt"
 
+      - name: Delete second line of all files
+        run: |
+          sed -i '2d' "/tmp/txt/*.txt"
+
+      - name: See if this worked?
+        run: |
+          cat "/tmp/txt/muOS - Classic.txt"
+
       - name: Ensure all line breaks are now deleted
         run: |
           for dir in */; do dir_name="${dir%/}"; tr "\n" " " < "/tmp/txt/${dir_name}.txt" > "/tmp/page/${dir_name}.txt"; done

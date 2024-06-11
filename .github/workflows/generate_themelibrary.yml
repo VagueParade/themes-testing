@@ -35,7 +35,7 @@ jobs:
           
       - name: Generate text file with all directory names, with directory name inside
         run: |
-          mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd "${dir_name}" && echo "| ![${dir_name}](<https://raw.githubusercontent.com/MustardOS/theme/main/preview/${dir_name}.png>) <br>[${dir_name}]" > "/tmp/page/${dir_name}.txt" && echo -n "(https://github.com/MustardOS/theme/releases/download/YEAR-DATE-TIME/${dir_name}.zip)" | tr [:space:] "." >> "/tmp/page/${dir_name}.txt"); cat "${dir_name}/credits.txt" >> "/tmp/page/${dir_name}.txt"; done
+          mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd "${dir_name}" && echo "| ![${dir_name}](<https://raw.githubusercontent.com/MustardOS/theme/main/preview/${dir_name}.png>) <br>[${dir_name}]" > "/tmp/page/${dir_name}.txt" && echo -n "(https://github.com/MustardOS/theme/releases/download/YEAR-DATE-TIME/${dir_name}.zip)<br><sup>" | tr [:space:] "." >> "/tmp/page/${dir_name}.txt"); cat "${dir_name}/credits.txt" >> "/tmp/page/${dir_name}.txt" & echo "</sup>" >> "/tmp/page/${dir_name}.txt"); done
 
 #  && cat "${dir_name}/credits.txt >> "/tmp/page/${dir_name}.txt"
 #| ![$dir_name](https://raw.githubusercontent.com/MustardOS/theme/main/preview/$dir_name.png) <br>[$dir_name]

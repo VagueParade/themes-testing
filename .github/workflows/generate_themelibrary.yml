@@ -77,6 +77,11 @@ jobs:
         run: |
           ls -1 /tmp/page
 
+      - name: See if this worked?
+        run: |
+          more "/tmp/page/MUOS - CLASSIC.TXT"
+
+
 #echo "Welcome GFG" > output.txt
 #This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.
 #If we want to append the output in an existing file, we use `>>` instead of `>`.

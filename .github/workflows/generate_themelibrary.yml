@@ -41,17 +41,19 @@ jobs:
 #| ![$dir_name](https://raw.githubusercontent.com/MustardOS/theme/main/preview/$dir_name.png) <br>[$dir_name]
 #(https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Analogue-Arimo.zip) <br><sup>by: Cheema OTB (original: Aemiii91)</sup> 
 
+      - name: Replace line breaks with space
+        run: |
+          mkdir -p /tmp/txt && for dir in */; do dir_name="${dir%/}"; tr "\n" " " < "/tmp/page/${dir_name}.txt" > "/tmp/txt/${dir_name}.txt"; done
+          
       - name: Delete preview text file
         run: |
           rm /tmp/page/preview.txt
-
-      - name: Replace line breaks with space
-        run: |
-          cd /tmp/page && tr "\n" " " < "Retro Glow Blue.txt" | sponge "Retro Glow Blue.txt"
+          rm /tmp/txt/preview.txt
 
       - name: See if this worked?
         run: |
           cat "/tmp/page/Retro Glow Blue.txt"
+          cat "/tmp/txt/Retro Glow Blue.txt"
 
       - name: Show directory names
         run: |

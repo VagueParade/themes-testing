@@ -38,7 +38,7 @@ jobs:
           
       - name: Convert directory names to versions with dots instead of spaces
         run: |
-          for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && echo "${dir_name}" | tr [:space:] "." >> "/tmp/page/${dir_name}.txt"); done
+          for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && echo "(https://github.com/MustardOS/theme/releases/download/YEAR-DATE-TIME/${dir_name}.zip)" | tr [:space:] "." >> "/tmp/page/${dir_name}.txt"); done
 
       - name: Show directory names
         run: |

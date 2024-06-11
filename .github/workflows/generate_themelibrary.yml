@@ -50,18 +50,19 @@ jobs:
           cat "/tmp/page/Retro Glow Blue.txt"
           cat "/tmp/txt/Retro Glow Blue.txt"
 
-      - name: Show directory names
-        run: |
-          ls -1 /tmp/txt
-
       - name: Ensure all line breaks are now deleted
         run: |
+          for dir in */; do dir_name="${dir%/}"; echo "e" >> "/tmp/txt/${dir_name}.txt"; done
           for dir in */; do dir_name="${dir%/}"; tr -d '\n' < "/tmp/txt/${dir_name}.txt" > "/tmp/page/${dir_name}.txt"; done
 
       - name: Delete preview text file
         run: |
           rm /tmp/page/preview.txt
           rm /tmp/txt/preview.txt
+
+      - name: Show directory names
+        run: |
+          ls -1 /tmp/page
 
       - name: See if this worked?
         run: |

@@ -92,12 +92,12 @@ jobs:
       - name: See if this worked?
         run: |
           more "/tmp/page/RETRO GLOW BLUE.TXT"
-
-      - name: The Big Merge
+          
+      - name: The Big check
         run: |
           for file in /tmp/page/*; do cat * complete.txt; done
 
-        - name: See if this worked?
+      - name: See if this worked?
         run: |
           more "/tmp/page/complete.txt"
 #echo "Welcome GFG" > output.txt

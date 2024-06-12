@@ -83,7 +83,7 @@ jobs:
 
       - name: Add enter at end of every file
         run: |
-          for file in /tmp/page/*; echo "" >> "$file"; done
+          for file in /tmp/page/*; do echo "" >> "$file"; done
 
       - name: See if this worked?
         run: |

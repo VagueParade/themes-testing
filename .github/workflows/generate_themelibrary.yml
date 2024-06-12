@@ -65,6 +65,14 @@ jobs:
         run: |
           rm /tmp/page/complet.txt
 
+      - name: Delete old credits
+        run: |
+          rm /preview/credits.txt
+
+      - name: Delete old theme site
+        run: |
+          rm /themesite.md
+
       - name: Insert | at end of every line
         run: |
           sed -i "s/$/ |/" /tmp/page/complete.txt

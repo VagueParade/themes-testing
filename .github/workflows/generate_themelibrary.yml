@@ -1,4 +1,4 @@
-name: Theme Library Generate
+name: Theme Table Generate
 
 on: workflow_dispatch
 

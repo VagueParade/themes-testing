@@ -1,8 +1,8 @@
 name: muOS Complete Archive Manager Theme Releases
 
 on:
-  #push:
-  #  branches: ["main"]
+  push:
+    branches: ["main"]
   workflow_dispatch:
     
 concurrency: 
@@ -95,8 +95,8 @@ jobs:
         id: info
         run: |
           echo "Published themes: ${{steps.date.outputs.date}} to: https://github.com/${{ steps.env.outputs.RELEASE_ORG}}/${{ steps.env.outputs.RELEASE_REPO}}"
-
-      - name: Create temporary file
+      
+      - name: Create temporary credits file
         run: |
           echo preview > "preview/credits.txt"
           
@@ -112,11 +112,11 @@ jobs:
         run: |
           for dir in */; do dir_name="${dir%/}"; tr -d "\n\r" < "/tmp/txt/${dir_name}.txt" > "/tmp/page/${dir_name}.txt"; done
 
-      - name: Delete preview text file
+      - name: Delete placeholder preview text file
         run: |
           rm /tmp/page/preview.txt
 
-      - name: Delete preview text file
+      - name: Delete placeholder preview text file
         run: |
           rm /tmp/txt/preview.txt
 
@@ -136,11 +136,11 @@ jobs:
         run: |
           paste -d ' ' - - - < /tmp/page/complet.txt > /tmp/page/complete.txt
 
-      - name: Delete old text file
+      - name: Delete placeholder text file
         run: |
           rm /tmp/page/complet.txt
 
-      - name: Delete old credits
+      - name: Delete placeholder credits file
         run: |
           rm preview/credits.txt
 
@@ -148,11 +148,15 @@ jobs:
         run: |
           rm themesite.md
 
+      - name: Delete old README
+        run: |
+          rm README.md
+          
       - name: Insert | at end of every line
         run: |
           sed -i "s/$/ |/" /tmp/page/complete.txt
           
-      - name: See if this worked?
+      - name: Test to see if this has worked
         run: |
           more "/tmp/page/complete.txt"    
 
@@ -166,13 +170,18 @@ jobs:
 
       - name: Move file to correct location
         run: |
-          mv "/tmp/themesite.md" "themesite.md"
+          cp "/tmp/themesite.md" "themesite.md"
 
-      - name: Push this file to the github, replacing the previous
+      - name: Copy file and make it the README as well
+        run: |
+          mv "/tmp/themesite.md" "README.md"
+
+      - name: Push files to the github, replacing the previous
         run: |
           git config --global user.name "VagueParade"
           git config --global user.email "166325657+VagueParade@users.noreply.github.com"
 
           git add -A
-          git commit -m "themesite.md"
+          git commit -m "themesite.md & README.md"
           git push
+          

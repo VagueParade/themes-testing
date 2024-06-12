@@ -83,7 +83,7 @@ jobs:
 
       - name: Add enter at end of every file
         run: |
-          for file in /tmp/page/*; do sed -i -e '$a\' file; done
+          for file in /tmp/page/*; do sed -i -e '$a\' *.TXT; done
 
       - name: See if this worked?
         run: |

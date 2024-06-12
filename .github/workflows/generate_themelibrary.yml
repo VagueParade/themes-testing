@@ -67,11 +67,11 @@ jobs:
 
       - name: Delete old credits
         run: |
-          rm /preview/credits.txt
+          rm preview/credits.txt
 
       - name: Delete old theme site
         run: |
-          rm /themesite.md
+          rm themesite.md
 
       - name: Insert | at end of every line
         run: |
@@ -83,7 +83,7 @@ jobs:
 
       - name: Merge with the theme template
         run: |
-          cat themepagetemplate.md /tmp/page/complete.txt > /tmp/newthemepage.md
+          cat .github/md_templates/themepagetemplate.md /tmp/page/complete.txt > /tmp/newthemepage.md
 
       - name: See if this worked?
         run: |

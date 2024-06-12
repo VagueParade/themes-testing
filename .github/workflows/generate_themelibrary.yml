@@ -83,11 +83,15 @@ jobs:
 
       - name: Merge with the theme template
         run: |
-          cat ".github/md_templates/themepagetemplate.md" /tmp/page/complete.txt > /tmp/newthemepage.md
+          cat ".github/md_templates/themepagetemplate.md" /tmp/page/complete.txt > /tmp/themesite.md
 
       - name: See if this worked?
         run: |
-          more "/tmp/newthemepage.md"    
+          more "/tmp/themesite.md" 
+
+      - name: Move file to correct location
+        run: |
+          mv "/tmp/themesite.md" ../
 
       - name: Push this file to the github, replacing the previous
         run: |

@@ -17,21 +17,9 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Show directory names
-        run: |
-          ls -1
-
-      - name: Show directory names
-        run: |
-          cat "Analogue-Arimo/credits.txt"
-
       - name: Create temporary file
         run: |
           echo preview > "preview/credits.txt"
-
-      - name: Show directory names
-        run: |
-          cat "preview/credits.txt"
           
       - name: Generate text file with all directory names, with directory name inside
         run: |
@@ -57,61 +45,25 @@ jobs:
         run: |
           rm /tmp/txt/preview.txt
 
-      - name: Show directory names
-        run: |
-          ls -1 /tmp/page
-
-      - name: See if this worked?
-        run: |
-          more "/tmp/page/Retro Glow Blue.txt"
-
-      - name: See if this worked?
-        run: |
-          more "/tmp/page/muOS - Classic.txt"
-
       - name: make all file names uppercase
         run: |
           cd /tmp/page && for f in *; do mv -- "$f" "$(tr [:lower:] [:upper:] <<< "$f")" ; done
 
-      - name: Show directory names
-        run: |
-          ls -1 /tmp/page
-
-      - name: See if this worked?
-        run: |
-          more "/tmp/page/MUOS - CLASSIC.TXT"
-
       - name: Add enter at end of every file
         run: |
           for file in /tmp/page/*; do sed -i -e '$a\' "$file"; done
-
-      - name: See if this worked?
-        run: |
-          more "/tmp/page/MUOS - CLASSIC.TXT"
-
-      - name: See if this worked?
-        run: |
-          more "/tmp/page/RETRO GLOW BLUE.TXT"
           
-      - name: The Big check
+      - name: Combine the files
         run: |
           cat /tmp/page/* > /tmp/page/complet.txt
-
-      - name: See if this worked?
-        run: |
-          more "/tmp/page/complet.txt"
 
       - name: Format into three per line
         run: |
           paste -d ' ' - - - < /tmp/page/complet.txt > /tmp/page/complete.txt
 
-      - name: Delete preview text file
+      - name: Delete old text file
         run: |
           rm /tmp/page/complet.txt
-
-      - name: See if this worked?
-        run: |
-          more "/tmp/page/complete.txt"
 
       - name: Insert | at end of every line
         run: |
@@ -119,7 +71,15 @@ jobs:
           
       - name: See if this worked?
         run: |
-          more "/tmp/page/complete.txt"         
+          more "/tmp/page/complete.txt"    
+
+      - name: Merge with the theme template
+        run: |
+          cat /.github/md_templates/themepagetemplate.md /tmp/page/complete.txt > /tmp/newthemepage.md
+
+      - name: See if this worked?
+        run: |
+          more "/tmp/newthemepage.md"    
 #echo "Welcome GFG" > output.txt
 #This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.
 #If we want to append the output in an existing file, we use `>>` instead of `>`.

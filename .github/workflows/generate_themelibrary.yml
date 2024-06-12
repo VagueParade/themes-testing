@@ -115,7 +115,7 @@ jobs:
 
       - name: Insert | at end of every line
         run: |
-          sed -i s/$/ \n/ /tmp/page/complete.txt
+          sed -i "s/$/ \n/" /tmp/page/complete.txt
           
       - name: See if this worked?
         run: |

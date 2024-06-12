@@ -81,7 +81,18 @@ jobs:
         run: |
           more "/tmp/page/MUOS - CLASSIC.TXT"
 
+      - name: Add enter at end of every file
+        run: |
+          for file in /tmp/page/*.TXT; do; echo "" >> "$file"; done
 
+      - name: See if this worked?
+        run: |
+          more "/tmp/page/MUOS - CLASSIC.TXT"
+
+      - name: See if this worked?
+        run: |
+          more "/tmp/page/Retro Glow Blue.txt"
+          
 #echo "Welcome GFG" > output.txt
 #This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.
 #If we want to append the output in an existing file, we use `>>` instead of `>`.

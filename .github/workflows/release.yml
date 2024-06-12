@@ -95,7 +95,14 @@ jobs:
         id: info
         run: |
           echo "Published themes: ${{steps.date.outputs.date}} to: https://github.com/${{ steps.env.outputs.RELEASE_ORG}}/${{ steps.env.outputs.RELEASE_REPO}}"
-      
+     
+      - name: Checkout repo again
+        uses: actions/checkout@v4  
+
+      - name: Reset working directory
+        run: |
+          cd /
+        
       - name: Create temporary credits file
         run: |
           echo preview > "preview/credits.txt"

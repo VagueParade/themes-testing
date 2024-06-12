@@ -80,6 +80,15 @@ jobs:
       - name: See if this worked?
         run: |
           more "/tmp/newthemepage.md"    
+
+      - name: Push this file to the github, replacing the previous
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git commit -m "themesite.md"
+          git push
 #echo "Welcome GFG" > output.txt
 #This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.
 #If we want to append the output in an existing file, we use `>>` instead of `>`.

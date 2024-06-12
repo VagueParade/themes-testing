@@ -75,7 +75,7 @@ jobs:
 
       - name: Merge with the theme template
         run: |
-          cat /.github/md_templates/themepagetemplate.md /tmp/page/complete.txt > /tmp/newthemepage.md
+          cat themepagetemplate.md /tmp/page/complete.txt > /tmp/newthemepage.md
 
       - name: See if this worked?
         run: |

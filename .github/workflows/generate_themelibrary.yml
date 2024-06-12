@@ -91,7 +91,7 @@ jobs:
 
       - name: Move file to correct location
         run: |
-          mv "/tmp/themesite.md" ../
+          mv "/tmp/themesite.md" /
 
       - name: Push this file to the github, replacing the previous
         run: |

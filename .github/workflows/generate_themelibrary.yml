@@ -83,7 +83,7 @@ jobs:
 
       - name: Add enter at end of every file
         run: |
-          for file in /tmp/page/*; do echo "" >> "$file"; done
+          for file in /tmp/page/*; do echo "\n" >> "$file"; done
 
       - name: See if this worked?
         run: |
@@ -91,7 +91,7 @@ jobs:
 
       - name: See if this worked?
         run: |
-          more "/tmp/page/Retro Glow Blue.txt"
+          more "/tmp/page/RETRO GLOW BLUE.TXT"
           
 #echo "Welcome GFG" > output.txt
 #This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.

@@ -17,20 +17,14 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Create temporary file
+      - name: Create temporary credits file
         run: |
           echo preview > "preview/credits.txt"
           
       - name: Generate text file with all directory names, with directory name inside
         run: |
           mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd "${dir_name}" && echo "| ![${dir_name}](<https://raw.githubusercontent.com/MustardOS/theme/main/preview/${dir_name}.png>) <br>[${dir_name}" > "/tmp/page/${dir_name}.txt" && echo -n "](https://github.com/MustardOS/theme/releases/latest/download/${dir_name}.zip)<br><sup>" | tr [:space:] "." >> "/tmp/page/${dir_name}.txt"); cat "${dir_name}/credits.txt" >> "/tmp/page/${dir_name}.txt"; (cd "${dir_name}" && echo "</sup> " >> "/tmp/page/${dir_name}.txt"); done
-          
-        # sed 's/0/1/g' "$location_x/file_1" >"$location_y/file2"
-#sed 's/\n/br/g' "${dir_name}/credits.txt" >> "/tmp/page/${dir_name}.txt"
-#  && cat "${dir_name}/credits.txt >> "/tmp/page/${dir_name}.txt"
-#| ![$dir_name](https://raw.githubusercontent.com/MustardOS/theme/main/preview/$dir_name.png) <br>[$dir_name]
-#(https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/Analogue-Arimo.zip) <br><sup>by: Cheema OTB (original: Aemiii91)</sup>
-#cat "${dir_name}/credits.txt" | sed -e 's/\n/<br>/g' >> "/tmp/page/${dir_name}.txt"          
+       
       - name: Replace line breaks with space
         run: |
           mkdir -p /tmp/txt && for dir in */; do dir_name="${dir%/}"; tr "\n" " " < "/tmp/page/${dir_name}.txt" > "/tmp/txt/${dir_name}.txt"; done
@@ -39,11 +33,11 @@ jobs:
         run: |
           for dir in */; do dir_name="${dir%/}"; tr -d "\n\r" < "/tmp/txt/${dir_name}.txt" > "/tmp/page/${dir_name}.txt"; done
 
-      - name: Delete preview text file
+      - name: Delete placeholder preview text file
         run: |
           rm /tmp/page/preview.txt
 
-      - name: Delete preview text file
+      - name: Delete placeholder preview text file
         run: |
           rm /tmp/txt/preview.txt
 
@@ -63,11 +57,11 @@ jobs:
         run: |
           paste -d ' ' - - - < /tmp/page/complet.txt > /tmp/page/complete.txt
 
-      - name: Delete old text file
+      - name: Delete placeholder text file
         run: |
           rm /tmp/page/complet.txt
 
-      - name: Delete old credits
+      - name: Delete placeholder credits file
         run: |
           rm preview/credits.txt
 
@@ -79,7 +73,7 @@ jobs:
         run: |
           sed -i "s/$/ |/" /tmp/page/complete.txt
           
-      - name: See if this worked?
+      - name: Test to see if this has worked
         run: |
           more "/tmp/page/complete.txt"    
 
@@ -95,6 +89,10 @@ jobs:
         run: |
           mv "/tmp/themesite.md" "themesite.md"
 
+      - name: Copy file and make it the README as well
+        run: |
+          cp "themesite.md" "README.md"
+
       - name: Push this file to the github, replacing the previous
         run: |
           git config --global user.name "VagueParade"
@@ -102,16 +100,5 @@ jobs:
 
           git add -A
           git commit -m "themesite.md"
+          git commit -m "README.md"
           git push
-
-#echo "Welcome GFG" > output.txt
-#This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.
-#If we want to append the output in an existing file, we use `>>` instead of `>`.
-          
-# for dir in */; do dir_name="${dir%/}";
-
-# ${dir_name} <- take all spaces and convert to .
-# echo "${dir_name}" | tr \ \ .
-# echo "${dir_name}" | tr [:space:] []
-
-# https://github.com/MustardOS/theme/releases/download/${{steps.date.outputs.date}}/Analogue-Arimo.zip

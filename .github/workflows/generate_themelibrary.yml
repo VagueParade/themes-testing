@@ -95,7 +95,7 @@ jobs:
           
       - name: The Big check
         run: |
-          cat /tmp/page/* > complete.txt
+          cat /tmp/page/* > /tmp/page/complete.txt
 
       - name: See if this worked?
         run: |

@@ -95,15 +95,19 @@ jobs:
           
       - name: The Big check
         run: |
-          cat /tmp/page/* > /tmp/page/complete.txt
+          cat /tmp/page/* > /tmp/page/complet.txt
 
       - name: See if this worked?
         run: |
-          more "/tmp/page/complete.txt"
+          more "/tmp/page/complet.txt"
 
       - name: Format into three per line
         run: |
-          paste -d ' ' - - - < /tmp/page/complete.txt
+          paste -d ' ' - - - < /tmp/page/complet.txt > /tmp/page/complete.txt
+
+      - name: Delete preview text file
+        run: |
+          rm /tmp/page/complet.txt
 
       - name: See if this worked?
         run: |

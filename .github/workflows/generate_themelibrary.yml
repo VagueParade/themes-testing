@@ -104,7 +104,7 @@ jobs:
 
       - name: get most recent release tag
         run: | 
-          git describe --tags --abbrev=0
+          git describe --abbrev=0
 #echo "Welcome GFG" > output.txt
 #This will write the output of the echo command to the file name `output.txt`. File will be overwritten if it already exists.
 #If we want to append the output in an existing file, we use `>>` instead of `>`.

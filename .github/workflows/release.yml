@@ -171,17 +171,17 @@ jobs:
         run: |
           cat ".github/md_templates/themepagetemplate.md" /tmp/page/complete.txt > /tmp/themesite.md
 
-      - name: See if this worked?
+      - name: Merge with the readme template
         run: |
-          more "/tmp/themesite.md" 
+          cat ".github/md_templates/readmetemplate.md" /tmp/page/complete.txt > /tmp/readme.md
 
       - name: Move file to correct location
         run: |
           cp "/tmp/themesite.md" "themesite.md"
 
-      - name: Copy file and make it the README as well
+      - name: Move file to correct location
         run: |
-          mv "/tmp/themesite.md" "README.md"
+          cp "/tmp/readme.md" "README.md"
 
       - name: Push files to the github, replacing the previous
         run: |

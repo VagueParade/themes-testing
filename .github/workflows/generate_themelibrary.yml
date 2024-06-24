@@ -15,15 +15,15 @@ jobs:
     steps:
 
       - name: Checkout repo
-        uses: actions/checkout@v4
-
+        uses: actions/checkout@v4  
+        
       - name: Create temporary credits file
         run: |
           echo preview > "preview/credits.txt"
           
       - name: Generate text file with all directory names, with directory name inside
         run: |
-          mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd "${dir_name}" && echo "| ![${dir_name}](<https://raw.githubusercontent.com/MustardOS/theme/main/preview/${dir_name}.png>) <br>[${dir_name}" > "/tmp/page/${dir_name}.txt" && echo -n "](https://github.com/MustardOS/theme/releases/latest/download/${dir_name}.zip)<br><sup>" | tr [:space:] "." >> "/tmp/page/${dir_name}.txt"); cat "${dir_name}/credits.txt" >> "/tmp/page/${dir_name}.txt"; (cd "${dir_name}" && echo "</sup>" >> "/tmp/page/${dir_name}.txt"); done
+          mkdir -p /tmp/page && for dir in */; do dir_name="${dir%/}"; (cd "${dir_name}" && echo "| ![${dir_name}](<https://raw.githubusercontent.com/MustardOS/theme/main/preview/${dir_name}.png>) <br>[${dir_name}" > "/tmp/page/${dir_name}.txt" && echo -n "](https://github.com/MustardOS/theme/releases/latest/download/${dir_name}.zip)<br><sup>" | tr [:space:] "." >> "/tmp/page/${dir_name}.txt"); cat "${dir_name}/credits.txt" >> "/tmp/page/${dir_name}.txt"; (cd "${dir_name}" && echo "</sup> " >> "/tmp/page/${dir_name}.txt"); done
        
       - name: Replace line breaks with space
         run: |
@@ -88,14 +88,6 @@ jobs:
       - name: Merge with the readme template
         run: |
           cat ".github/md_templates/readmetemplate.md" /tmp/page/complete.txt > /tmp/readme.md
-
-      - name: See if this worked?
-        run: |
-          more "/tmp/themesite.md" 
-
-      - name: See if this worked?
-        run: |
-          more "/tmp/readme.md" 
 
       - name: Move file to correct location
         run: |

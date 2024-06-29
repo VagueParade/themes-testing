@@ -8,6 +8,8 @@ You can find all themes for muOS here. Click on a theme title to download a zip,
 
 - [combine.zip](https://combine.zip). To prevent having to install lots of individual archives separately, you can combine archives together using this website, to create a customised single archive for multiple themes.
 
+  
+> *Some themes have matching folder artwork whilst navigating Explore Content, this is installed separately from themes. To see if a theme has these available, navigate to the specific theme's release page on the [muOS Discord server](https://discord.gg/muos).*
 
 |   |   |   |
 | :-----------------------------------------------------------: | :-----------------------------------------------------------: | :-----------------------------------------------------------: |

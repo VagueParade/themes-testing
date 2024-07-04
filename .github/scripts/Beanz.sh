@@ -1,1 +1,14 @@
-#!/bin/sh \n \n URL="https://github.com/MustardOS/theme/releases/latest/download/Beanz.zip"\n THEME_NAME="Beanz" \n LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Beanz.zip" \n  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Beanz.png" \n ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Beanz.zip" \n SH_NAME="Beanz.sh" \n CREDITS_INFO= "by: VagueParade" \n \n rm -rf "$MUX_TEMP" /tmp/muxlog_* \n \n . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" \n 
+#!/bin/sh 
+ 
+ URL="https://github.com/MustardOS/theme/releases/latest/download/Beanz.zip"
+ THEME_NAME="Beanz" 
+ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Beanz.zip" 
+  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Beanz.png" 
+ ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Beanz.zip" 
+ SH_NAME="Beanz.sh" 
+ CREDITS_INFO= "by: VagueParade" 
+ 
+ rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+ 
+ . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+ 

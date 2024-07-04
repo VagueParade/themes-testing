@@ -112,7 +112,7 @@ jobs:
       - name: Remove preview file
         run: |
           rm "/tmp/scripts/preview.sh"
-      	  
+          
       - name: Push scripts to the secret folder
         run: |
           cp "/tmp/scripts/*.sh" "/.github/scripts/*.sh"

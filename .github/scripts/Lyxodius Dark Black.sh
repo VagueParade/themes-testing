@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Lyxodius Dark Black.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Lyxodius Dark Black.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Lyxodius Dark Black.zip" 
 SH_NAME="Lyxodius Dark Black.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Lyxodius Dark Black.png"
 CREDITS_INFO="by: Lyxodius" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

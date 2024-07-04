@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/PS Orange.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/PS Orange.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/PS Orange.zip" 
 SH_NAME="PS Orange.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/PS Orange.png"
 CREDITS_INFO="by: VagueParade" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

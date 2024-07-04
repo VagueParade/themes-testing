@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/muOS - Beans.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/muOS - Beans.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/muOS - Beans.zip" 
 SH_NAME="muOS - Beans.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/muOS - Beans.png"
 CREDITS_INFO="by: LMarcoMiranda" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

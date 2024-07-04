@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Homestar Runner.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Homestar Runner.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Homestar Runner.zip" 
 SH_NAME="Homestar Runner.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Homestar Runner.png"
 CREDITS_INFO="by WhiskerFjords" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

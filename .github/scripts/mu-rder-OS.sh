@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/mu-rder-OS.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/mu-rder-OS.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/mu-rder-OS.zip" 
 SH_NAME="mu-rder-OS.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/mu-rder-OS.png"
 CREDITS_INFO="by: antiKk" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

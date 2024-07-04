@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GbOS Color - Ruby.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GbOS Color - Ruby.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GbOS Color - Ruby.zip" 
 SH_NAME="GbOS Color - Ruby.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/GbOS Color - Ruby.png"
 CREDITS_INFO="by: ciskao & CoeRafinha" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

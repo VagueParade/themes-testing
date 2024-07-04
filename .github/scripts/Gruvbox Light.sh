@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Gruvbox Light.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Gruvbox Light.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Gruvbox Light.zip" 
 SH_NAME="Gruvbox Light.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Gruvbox Light.png"
 CREDITS_INFO="by: antiKk (original: morhetz)" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

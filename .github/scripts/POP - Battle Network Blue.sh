@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/POP - Battle Network Blue.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/POP - Battle Network Blue.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/POP - Battle Network Blue.zip" 
 SH_NAME="POP - Battle Network Blue.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/POP - Battle Network Blue.png"
 CREDITS_INFO="by: LMarcoMiranda" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

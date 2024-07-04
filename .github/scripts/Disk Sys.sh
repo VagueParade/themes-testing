@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Disk Sys.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Disk Sys.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Disk Sys.zip" 
 SH_NAME="Disk Sys.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Disk Sys.png"
 CREDITS_INFO="by: Mr.DomoDude" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

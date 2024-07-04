@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Dreamcast Themecast.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Dreamcast Themecast.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Dreamcast Themecast.zip" 
 SH_NAME="Dreamcast Themecast.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Dreamcast Themecast.png"
 CREDITS_INFO="by: VagueParade" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

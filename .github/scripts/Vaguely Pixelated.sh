@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Vaguely Pixelated.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Vaguely Pixelated.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Vaguely Pixelated.zip" 
 SH_NAME="Vaguely Pixelated.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Vaguely Pixelated.png"
 CREDITS_INFO="by: VagueParade" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

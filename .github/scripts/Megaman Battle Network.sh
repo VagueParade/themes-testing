@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Megaman Battle Network.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Megaman Battle Network.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Megaman Battle Network.zip" 
 SH_NAME="Megaman Battle Network.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Megaman Battle Network.png"
 CREDITS_INFO="by: Ryx" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

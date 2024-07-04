@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Rusty & Sox - Pink.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Rusty & Sox - Pink.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Rusty & Sox - Pink.zip" 
 SH_NAME="Rusty & Sox - Pink.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Rusty & Sox - Pink.png"
 CREDITS_INFO="by: Game Over Jay" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

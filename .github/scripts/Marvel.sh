@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Marvel.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Marvel.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Marvel.zip" 
 SH_NAME="Marvel.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Marvel.png"
 CREDITS_INFO="by: Kirito_01" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Eagle Union.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Eagle Union.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Eagle Union.zip" 
 SH_NAME="Eagle Union.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Eagle Union.png"
 CREDITS_INFO="by: lovariel" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/LCD SP.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/LCD SP.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/LCD SP.zip" 
 SH_NAME="LCD SP.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/LCD SP.png"
 CREDITS_INFO="by: antiKk & Merkin" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

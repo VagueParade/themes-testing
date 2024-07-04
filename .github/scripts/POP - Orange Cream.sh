@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/POP - Orange Cream.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/POP - Orange Cream.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/POP - Orange Cream.zip" 
 SH_NAME="POP - Orange Cream.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/POP - Orange Cream.png"
 CREDITS_INFO="by: LMarcoMiranda" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

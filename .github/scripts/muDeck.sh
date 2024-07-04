@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/muDeck.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/muDeck.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/muDeck.zip" 
 SH_NAME="muDeck.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/muDeck.png"
 CREDITS_INFO="by: ciskao" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

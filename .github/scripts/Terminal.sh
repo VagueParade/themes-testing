@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Terminal.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Terminal.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Terminal.zip" 
 SH_NAME="Terminal.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Terminal.png"
 CREDITS_INFO="by: weakvar" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

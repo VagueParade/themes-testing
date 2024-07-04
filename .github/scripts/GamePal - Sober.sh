@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GamePal - Sober.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GamePal - Sober.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GamePal - Sober.zip" 
 SH_NAME="GamePal - Sober.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/GamePal - Sober.png"
 CREDITS_INFO="by: vacarotti" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

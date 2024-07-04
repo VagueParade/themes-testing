@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/PS Aqua.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/PS Aqua.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/PS Aqua.zip" 
 SH_NAME="PS Aqua.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/PS Aqua.png"
 CREDITS_INFO="by: VagueParade" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

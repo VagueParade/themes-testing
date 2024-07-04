@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/New Classic.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/New Classic.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/New Classic.zip" 
 SH_NAME="New Classic.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/New Classic.png"
 CREDITS_INFO="by: lezzob (original: vacarotti)" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

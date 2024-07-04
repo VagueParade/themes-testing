@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/muOS - Classic.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/muOS - Classic.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/muOS - Classic.zip" 
 SH_NAME="muOS - Classic.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/muOS - Classic.png"
 CREDITS_INFO="by: xonglebongle" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

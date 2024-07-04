@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/muOS - NeXT.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/muOS - NeXT.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/muOS - NeXT.zip" 
 SH_NAME="muOS - NeXT.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/muOS - NeXT.png"
 CREDITS_INFO="by: jdcross" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

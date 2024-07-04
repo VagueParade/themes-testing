@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Windows 95.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Windows 95.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Windows 95.zip" 
 SH_NAME="Windows 95.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Windows 95.png"
 CREDITS_INFO="by: Jamie Martin" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

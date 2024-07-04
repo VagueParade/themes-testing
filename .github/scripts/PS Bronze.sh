@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/PS Bronze.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/PS Bronze.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/PS Bronze.zip" 
 SH_NAME="PS Bronze.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/PS Bronze.png"
 CREDITS_INFO="by: VagueParade" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

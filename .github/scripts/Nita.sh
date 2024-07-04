@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Nita.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Nita.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Nita.zip" 
 SH_NAME="Nita.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Nita.png"
 CREDITS_INFO="by: jdcross" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

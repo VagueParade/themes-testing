@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/pipboy-tube.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/pipboy-tube.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/pipboy-tube.zip" 
 SH_NAME="pipboy-tube.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/pipboy-tube.png"
 CREDITS_INFO="by: dopefish - with muOS Theme Maker" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

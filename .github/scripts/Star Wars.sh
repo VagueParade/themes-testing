@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Star Wars.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Star Wars.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Star Wars.zip" 
 SH_NAME="Star Wars.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Star Wars.png"
 CREDITS_INFO="by: Kirito_01" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GbOS Color - Diamond.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GbOS Color - Diamond.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GbOS Color - Diamond.zip" 
 SH_NAME="GbOS Color - Diamond.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/GbOS Color - Diamond.png"
 CREDITS_INFO="by: ciskao & CoeRafinha" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

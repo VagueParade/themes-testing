@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/EZF Cobalt.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/EZF Cobalt.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/EZF Cobalt.zip" 
 SH_NAME="EZF Cobalt.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/EZF Cobalt.png"
 CREDITS_INFO="by: tiduscrying (original: Masahiko)" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

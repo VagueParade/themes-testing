@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GarstardOS.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GarstardOS.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GarstardOS.zip" 
 SH_NAME="GarstardOS.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/GarstardOS.png"
 CREDITS_INFO="by: VagueParade" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

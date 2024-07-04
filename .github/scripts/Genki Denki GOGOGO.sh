@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Genki Denki GOGOGO.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Genki Denki GOGOGO.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Genki Denki GOGOGO.zip" 
 SH_NAME="Genki Denki GOGOGO.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Genki Denki GOGOGO.png"
 CREDITS_INFO="by: Cerceis - with muOS Theme Maker" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

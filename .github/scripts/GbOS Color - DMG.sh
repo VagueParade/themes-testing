@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GbOS Color - DMG.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GbOS Color - DMG.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GbOS Color - DMG.zip" 
 SH_NAME="GbOS Color - DMG.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/GbOS Color - DMG.png"
 CREDITS_INFO="by: ciskao & CoeRafinha" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

@@ -6,6 +6,7 @@ LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GamePal - Light.zip"
 LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GamePal - Light.png" 
 ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GamePal - Light.zip" 
 SH_NAME="GamePal - Light.sh" 
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/GamePal - Light.png"
 CREDITS_INFO="by: vacarotti" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

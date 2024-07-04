@@ -1,14 +1,14 @@
 #!/bin/sh 
  
- URL="https://github.com/MustardOS/theme/releases/latest/download/MustardFighter.zip"
- THEME_NAME="MustardFighter" 
- LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/MustardFighter.zip" 
-  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/MustardFighter.png" 
- ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/MustardFighter.zip" 
- SH_NAME="MustardFighter.sh" 
- CREDITS_INFO= "by: laughingman777" 
+URL="https://github.com/MustardOS/theme/releases/latest/download/MustardFighter.zip"
+THEME_NAME="MustardFighter" 
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/MustardFighter.zip" 
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/MustardFighter.png" 
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/MustardFighter.zip" 
+SH_NAME="MustardFighter.sh" 
+CREDITS_INFO="by: laughingman777" 
  
- rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
- . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
  

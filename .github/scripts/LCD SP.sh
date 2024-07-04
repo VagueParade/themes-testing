@@ -1,14 +1,14 @@
 #!/bin/sh 
  
- URL="https://github.com/MustardOS/theme/releases/latest/download/LCD.SP.zip"
- THEME_NAME="LCD SP" 
- LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/LCD SP.zip" 
-  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/LCD SP.png" 
- ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/LCD SP.zip" 
- SH_NAME="LCD SP.sh" 
- CREDITS_INFO= "by: antiKk & Merkin" 
+URL="https://github.com/MustardOS/theme/releases/latest/download/LCD.SP.zip"
+THEME_NAME="LCD SP" 
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/LCD SP.zip" 
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/LCD SP.png" 
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/LCD SP.zip" 
+SH_NAME="LCD SP.sh" 
+CREDITS_INFO="by: antiKk & Merkin" 
  
- rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
- . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
  

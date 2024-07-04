@@ -1,14 +1,14 @@
 #!/bin/sh 
  
- URL="https://github.com/MustardOS/theme/releases/latest/download/Xmas.zip"
- THEME_NAME="Xmas" 
- LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Xmas.zip" 
-  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Xmas.png" 
- ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Xmas.zip" 
- SH_NAME="Xmas.sh" 
- CREDITS_INFO= "by: antiKk" 
+URL="https://github.com/MustardOS/theme/releases/latest/download/Xmas.zip"
+THEME_NAME="Xmas" 
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Xmas.zip" 
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Xmas.png" 
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Xmas.zip" 
+SH_NAME="Xmas.sh" 
+CREDITS_INFO="by: antiKk" 
  
- rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
- . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
  

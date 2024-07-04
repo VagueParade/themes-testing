@@ -1,14 +1,14 @@
 #!/bin/sh 
  
- URL="https://github.com/MustardOS/theme/releases/latest/download/GenshinImpact.zip"
- THEME_NAME="GenshinImpact" 
- LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GenshinImpact.zip" 
-  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GenshinImpact.png" 
- ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GenshinImpact.zip" 
- SH_NAME="GenshinImpact.sh" 
- CREDITS_INFO= "by: Nguyen Dat - with muOS Theme Maker" 
+URL="https://github.com/MustardOS/theme/releases/latest/download/GenshinImpact.zip"
+THEME_NAME="GenshinImpact" 
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GenshinImpact.zip" 
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GenshinImpact.png" 
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GenshinImpact.zip" 
+SH_NAME="GenshinImpact.sh" 
+CREDITS_INFO="by: Nguyen Dat - with muOS Theme Maker" 
  
- rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
- . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
  

@@ -1,14 +1,14 @@
 #!/bin/sh 
  
- URL="https://github.com/MustardOS/theme/releases/latest/download/MinUI.-.GB.Light.zip"
- THEME_NAME="MinUI - GB Light" 
- LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/MinUI - GB Light.zip" 
-  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/MinUI - GB Light.png" 
- ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/MinUI - GB Light.zip" 
- SH_NAME="MinUI - GB Light.sh" 
- CREDITS_INFO= "by: Harry McNeill" 
+URL="https://github.com/MustardOS/theme/releases/latest/download/MinUI.-.GB.Light.zip"
+THEME_NAME="MinUI - GB Light" 
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/MinUI - GB Light.zip" 
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/MinUI - GB Light.png" 
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/MinUI - GB Light.zip" 
+SH_NAME="MinUI - GB Light.sh" 
+CREDITS_INFO="by: Harry McNeill" 
  
- rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
- . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
  

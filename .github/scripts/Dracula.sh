@@ -1,14 +1,14 @@
 #!/bin/sh 
  
- URL="https://github.com/MustardOS/theme/releases/latest/download/Dracula.zip"
- THEME_NAME="Dracula" 
- LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Dracula.zip" 
-  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Dracula.png" 
- ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Dracula.zip" 
- SH_NAME="Dracula.sh" 
- CREDITS_INFO= "by: antiKk" 
+URL="https://github.com/MustardOS/theme/releases/latest/download/Dracula.zip"
+THEME_NAME="Dracula" 
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Dracula.zip" 
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Dracula.png" 
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Dracula.zip" 
+SH_NAME="Dracula.sh" 
+CREDITS_INFO="by: antiKk" 
  
- rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
- . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
  

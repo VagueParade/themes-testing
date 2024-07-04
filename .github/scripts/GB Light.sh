@@ -1,14 +1,14 @@
 #!/bin/sh 
  
- URL="https://github.com/MustardOS/theme/releases/latest/download/GB.Light.zip"
- THEME_NAME="GB Light" 
- LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GB Light.zip" 
-  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GB Light.png" 
- ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GB Light.zip" 
- SH_NAME="GB Light.sh" 
- CREDITS_INFO= "by: Alukim" 
+URL="https://github.com/MustardOS/theme/releases/latest/download/GB.Light.zip"
+THEME_NAME="GB Light" 
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GB Light.zip" 
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GB Light.png" 
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GB Light.zip" 
+SH_NAME="GB Light.sh" 
+CREDITS_INFO="by: Alukim" 
  
- rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
- . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
  

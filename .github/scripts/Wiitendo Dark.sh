@@ -1,14 +1,14 @@
 #!/bin/sh 
  
- URL="https://github.com/MustardOS/theme/releases/latest/download/Wiitendo.Dark.zip"
- THEME_NAME="Wiitendo Dark" 
- LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Wiitendo Dark.zip" 
-  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Wiitendo Dark.png" 
- ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Wiitendo Dark.zip" 
- SH_NAME="Wiitendo Dark.sh" 
- CREDITS_INFO= "by: VagueParade" 
+URL="https://github.com/MustardOS/theme/releases/latest/download/Wiitendo.Dark.zip"
+THEME_NAME="Wiitendo Dark" 
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Wiitendo Dark.zip" 
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Wiitendo Dark.png" 
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Wiitendo Dark.zip" 
+SH_NAME="Wiitendo Dark.sh" 
+CREDITS_INFO="by: VagueParade" 
  
- rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
- . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
  

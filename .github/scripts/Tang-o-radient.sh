@@ -1,14 +1,14 @@
 #!/bin/sh 
  
- URL="https://github.com/MustardOS/theme/releases/latest/download/Tang-o-radient.zip"
- THEME_NAME="Tang-o-radient" 
- LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Tang-o-radient.zip" 
-  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Tang-o-radient.png" 
- ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Tang-o-radient.zip" 
- SH_NAME="Tang-o-radient.sh" 
- CREDITS_INFO= "by: tiduscrying" 
+URL="https://github.com/MustardOS/theme/releases/latest/download/Tang-o-radient.zip"
+THEME_NAME="Tang-o-radient" 
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Tang-o-radient.zip" 
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Tang-o-radient.png" 
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Tang-o-radient.zip" 
+SH_NAME="Tang-o-radient.sh" 
+CREDITS_INFO="by: tiduscrying" 
  
- rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
- . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
  

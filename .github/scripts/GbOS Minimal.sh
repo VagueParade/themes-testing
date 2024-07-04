@@ -1,14 +1,14 @@
 #!/bin/sh 
  
- URL="https://github.com/MustardOS/theme/releases/latest/download/GbOS.Minimal.zip"
- THEME_NAME="GbOS Minimal" 
- LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GbOS Minimal.zip" 
-  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GbOS Minimal.png" 
- ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GbOS Minimal.zip" 
- SH_NAME="GbOS Minimal.sh" 
- CREDITS_INFO= "by: ciskao & CoeRafinha" 
+URL="https://github.com/MustardOS/theme/releases/latest/download/GbOS.Minimal.zip"
+THEME_NAME="GbOS Minimal" 
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/GbOS Minimal.zip" 
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/GbOS Minimal.png" 
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/GbOS Minimal.zip" 
+SH_NAME="GbOS Minimal.sh" 
+CREDITS_INFO="by: ciskao & CoeRafinha" 
  
- rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
- . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
  

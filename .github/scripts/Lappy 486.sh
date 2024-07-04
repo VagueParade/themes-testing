@@ -1,14 +1,14 @@
 #!/bin/sh 
  
- URL="https://github.com/MustardOS/theme/releases/latest/download/Lappy.486.zip"
- THEME_NAME="Lappy 486" 
- LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Lappy 486.zip" 
-  LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Lappy 486.png" 
- ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Lappy 486.zip" 
- SH_NAME="Lappy 486.sh" 
- CREDITS_INFO= "by: MehStrongBadMeh" 
+URL="https://github.com/MustardOS/theme/releases/latest/download/Lappy.486.zip"
+THEME_NAME="Lappy 486" 
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Lappy 486.zip" 
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Lappy 486.png" 
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Lappy 486.zip" 
+SH_NAME="Lappy 486.sh" 
+CREDITS_INFO="by: MehStrongBadMeh" 
  
- rm -rf "$MUX_TEMP" /tmp/muxlog_* 
+rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
- . "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
  

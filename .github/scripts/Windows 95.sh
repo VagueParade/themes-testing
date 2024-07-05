@@ -11,5 +11,5 @@ CREDITS_INFO="by: Jamie Martin"
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 
  
-. "/mnt/mmc/MUOS/task/.ThemeInstall.sh" 
+. "/mnt/mmc/MUOS/application/.ThemeDownloader/scripts/ThemeInstall.sh" 
  

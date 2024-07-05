@@ -131,7 +131,7 @@ jobs:
 
       - name: Generate credits per theme
         run: |
-          for dir in */ ; do if [ "$dir" = .git -o "$dir" = .github -o "$dir" = preview  ] then continue fi dir_name="${dir%/}"; cat "${dir_name}/credits.txt" > ".github/.ThemeDownloader/credits/${dir_name}.txt"
+          for dir in */ ; do if [ "$dir" = .git -o "$dir" = .github -o "$dir" = preview  ] then continue fi dir_name="${dir%/}"; cat "${dir_name}/credits.txt" > ".github/.ThemeDownloader/credits/${dir_name}.txt" done
 
 #      - name: Copy over preview images to script folder
 #        run: |

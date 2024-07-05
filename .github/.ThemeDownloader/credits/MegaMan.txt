@@ -1,1 +1,1 @@
-MegaMan/credits.txt
+by: setix

@@ -117,13 +117,12 @@ jobs:
         run: |
           rm preview/credits.txt
 
-      - name: Reset working directory
-        run: |
-          cd
-
       - name: Create complete theme list as txt
         run: |
-          (shopt -s dotglob; ls --directory > ".github/.ThemeDownloader/scripts/complete.txt")
+          (shopt -s dotglob; rm ".github/.ThemeDownloader/scripts/complete.txt") 
+          (shopt -s dotglob; touch ".github/.ThemeDownloader/scripts/complete.txt")
+          (shopt -s dotglob; for dir in */; do dir_name="${dir%/}"; echo "${dir_name}" >> ".github/.ThemeDownloader/scripts/complete.txt"; done)
+
 
       - name: Push files to the github, replacing the previous
         run: |

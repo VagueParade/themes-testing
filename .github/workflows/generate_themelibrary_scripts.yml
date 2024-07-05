@@ -145,6 +145,12 @@ jobs:
           fi
           done
 
+      - name: Zip these combo files so that the download to the device is speedy - unzip on device
+        run:
+          (shopt -s dotglob; zip ".github/.ThemeDownloader/previews/Previews.zip" ".github/.ThemeDownloader/previews/*.png") 
+          (shopt -s dotglob; zip ".github/.ThemeDownloader/credits/Credits.zip" ".github/.ThemeDownloader/credits/*.txt") 
+          (shopt -s dotglob; zip ".github/.ThemeDownloader/themes/Previews.zip" ".github/.ThemeDownloader/themes/*.sh") 
+
       - name: Push files to the github, replacing the previous
         run: |
           git config --global user.name "VagueParade"

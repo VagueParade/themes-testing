@@ -1,12 +1,12 @@
 #!/bin/sh 
  
 URL="https://github.com/MustardOS/theme/releases/latest/download/Retro.Glow.Pink.zip"
-THEME_NAME="Retro Glow Pink" 
-LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Retro Glow Pink.zip" 
-LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Retro Glow Pink.png" 
-ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Retro Glow Pink.zip" 
-SH_NAME="Retro Glow Pink.sh" 
-PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Retro Glow Pink.png"
+THEME_NAME="Retro%20Glow%20Pink"
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Retro%20Glow%20Pink.zip"
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Retro%20Glow%20Pink.png"
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Retro%20Glow%20Pink.zip"
+SH_NAME="Retro%20Glow%20Pink.sh"
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Retro%20Glow%20Pink.png"
 CREDITS_INFO="by: nico.bass - with muOS Theme Maker" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

@@ -1,11 +1,11 @@
 #!/bin/sh 
  
 URL="https://github.com/MustardOS/theme/releases/latest/download/SayOS.zip"
-THEME_NAME="SayOS" 
-LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/SayOS.zip" 
-LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/SayOS.png" 
-ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/SayOS.zip" 
-SH_NAME="SayOS.sh" 
+THEME_NAME="SayOS"
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/SayOS.zip"
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/SayOS.png"
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/SayOS.zip"
+SH_NAME="SayOS.sh"
 PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/SayOS.png"
 CREDITS_INFO="by: Sayva and Lariarts" 
  

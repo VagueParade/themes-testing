@@ -1,11 +1,11 @@
 #!/bin/sh 
  
 URL="https://github.com/MustardOS/theme/releases/latest/download/EmulationStation.zip"
-THEME_NAME="EmulationStation" 
-LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/EmulationStation.zip" 
-LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/EmulationStation.png" 
-ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/EmulationStation.zip" 
-SH_NAME="EmulationStation.sh" 
+THEME_NAME="EmulationStation"
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/EmulationStation.zip"
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/EmulationStation.png"
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/EmulationStation.zip"
+SH_NAME="EmulationStation.sh"
 PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/EmulationStation.png"
 CREDITS_INFO="by: jellydude72" 
  

@@ -1,11 +1,11 @@
 #!/bin/sh 
  
 URL="https://github.com/MustardOS/theme/releases/latest/download/muVB.zip"
-THEME_NAME="muVB" 
-LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/muVB.zip" 
-LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/muVB.png" 
-ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/muVB.zip" 
-SH_NAME="muVB.sh" 
+THEME_NAME="muVB"
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/muVB.zip"
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/muVB.png"
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/muVB.zip"
+SH_NAME="muVB.sh"
 PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/muVB.png"
 CREDITS_INFO="by: RazamaBazakart - with muOS Theme Maker" 
  

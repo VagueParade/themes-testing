@@ -1,12 +1,12 @@
 #!/bin/sh 
  
 URL="https://github.com/MustardOS/theme/releases/latest/download/Glass.V1.zip"
-THEME_NAME="Glass V1" 
-LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Glass V1.zip" 
-LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Glass V1.png" 
-ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Glass V1.zip" 
-SH_NAME="Glass V1.sh" 
-PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Glass V1.png"
+THEME_NAME="Glass%20V1"
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Glass%20V1.zip"
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Glass%20V1.png"
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Glass%20V1.zip"
+SH_NAME="Glass%20V1.sh"
+PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Glass%20V1.png"
 CREDITS_INFO="by: r4in" 
  
 rm -rf "$MUX_TEMP" /tmp/muxlog_* 

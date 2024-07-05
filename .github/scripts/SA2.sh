@@ -1,11 +1,11 @@
 #!/bin/sh 
  
 URL="https://github.com/MustardOS/theme/releases/latest/download/SA2.zip"
-THEME_NAME="SA2" 
-LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/SA2.zip" 
-LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/SA2.png" 
-ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/SA2.zip" 
-SH_NAME="SA2.sh" 
+THEME_NAME="SA2"
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/SA2.zip"
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/SA2.png"
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/SA2.zip"
+SH_NAME="SA2.sh"
 PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/SA2.png"
 CREDITS_INFO="by: jake.hero - with muOS Theme Maker" 
  

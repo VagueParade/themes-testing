@@ -133,9 +133,9 @@ jobs:
         run: |
           (shopt -s dotglob; for dir in */; do dir_name="${dir%/}"; echo "${dir_name}/credits.txt" > ".github/.ThemeDownloader/credits/${dir_name}.txt"; done)
 
-      - name: Copy over preview images to script folder
-        run: |
-          for dir in */; do dir_name="${dir%/}"; if [ "preview/${dir_name}.png" -ne 0 ]; then (shopt -s dotglob; cp "preview/${dir_name}.png" ".github/.ThemeDownloader/previews/${dir_name}.png"); done
+#      - name: Copy over preview images to script folder
+#        run: |
+#          for dir in */; do dir_name="${dir%/}"; if [ "preview/${dir_name}.png" -ne 0 ]; then (shopt -s dotglob; cp "preview/${dir_name}.png" ".github/.ThemeDownloader/previews/${dir_name}.png"); done
 
       - name: Push files to the github, replacing the previous
         run: |

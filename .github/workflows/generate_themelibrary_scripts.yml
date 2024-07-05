@@ -129,6 +129,14 @@ jobs:
           (shopt -s dotglob; sed -i '/.github/d' ".github/.ThemeDownloader/scripts/themes.txt")
           (shopt -s dotglob; sed -i '/preview/d' ".github/.ThemeDownloader/scripts/themes.txt")
 
+      - name: Generate credits per theme
+        run: |
+          (shopt -s dotglob; for dir in */; do dir_name="${dir%/}"; echo "${dir_name}/credits.txt" >> ".github/.ThemeDownloader/credits/${dir_name}.txt"; done)
+
+      - name: Copy over preview images to script folder
+        run: |
+          (shopt -s dotglob; for dir in */; do dir_name="${dir%/}"; cp "preview/${dir_name}.png" ".github/.ThemeDownloader/previews/${dir_name}.png"; done)
+
       - name: Push files to the github, replacing the previous
         run: |
           git config --global user.name "VagueParade"

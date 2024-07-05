@@ -131,7 +131,7 @@ jobs:
 
       - name: Generate credits per theme
         run: |
-          (shopt -s dotglob; for dir in */; do dir_name="${dir%/}"; echo "${dir_name}/credits.txt" > ".github/.ThemeDownloader/credits/${dir_name}.txt"; done)
+          (shopt -s dotglob; for dir in */; do dir_name="${dir%/}"; cat "${dir_name}/credits.txt" > ".github/.ThemeDownloader/credits/${dir_name}.txt"; done)
 
 #      - name: Copy over preview images to script folder
 #        run: |

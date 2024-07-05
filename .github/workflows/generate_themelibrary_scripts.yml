@@ -123,6 +123,11 @@ jobs:
           (shopt -s dotglob; touch ".github/.ThemeDownloader/scripts/complete.txt")
           (shopt -s dotglob; for dir in */; do dir_name="${dir%/}"; echo "${dir_name}" >> ".github/.ThemeDownloader/scripts/complete.txt"; done)
 
+      - name: Edit this list to remove non-theme folders
+        run: |
+          (shopt -s dotglob; sed -i.bak '/.git\n/d' ".github/.ThemeDownloader/scripts/complete.txt")
+          (shopt -s dotglob; sed -i.bak '/.github\n/d' ".github/.ThemeDownloader/scripts/complete.txt")
+          (shopt -s dotglob; sed -i.bak '/preview\n/d' ".github/.ThemeDownloader/scripts/complete.txt")
 
       - name: Push files to the github, replacing the previous
         run: |

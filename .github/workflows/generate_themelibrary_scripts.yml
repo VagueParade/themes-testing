@@ -119,15 +119,15 @@ jobs:
 
       - name: Create complete theme list as txt
         run: |
-          (shopt -s dotglob; rm ".github/.ThemeDownloader/scripts/complete.txt") 
-          (shopt -s dotglob; touch ".github/.ThemeDownloader/scripts/complete.txt")
-          (shopt -s dotglob; for dir in */; do dir_name="${dir%/}"; echo "${dir_name}" >> ".github/.ThemeDownloader/scripts/complete.txt"; done)
+          (shopt -s dotglob; rm ".github/.ThemeDownloader/scripts/themes.txt") 
+          (shopt -s dotglob; touch ".github/.ThemeDownloader/scripts/themes.txt")
+          (shopt -s dotglob; for dir in */; do dir_name="${dir%/}"; echo "${dir_name}" >> ".github/.ThemeDownloader/scripts/themes.txt"; done)
 
       - name: Edit this list to remove non-theme folders
         run: |
-          (shopt -s dotglob; sed -i '/.git/d' ".github/.ThemeDownloader/scripts/complete.txt")
-          (shopt -s dotglob; sed -i '/.github/d' ".github/.ThemeDownloader/scripts/complete.txt")
-          (shopt -s dotglob; sed -i '/preview/d' ".github/.ThemeDownloader/scripts/complete.txt")
+          (shopt -s dotglob; sed -i '/.git/d' ".github/.ThemeDownloader/scripts/themes.txt")
+          (shopt -s dotglob; sed -i '/.github/d' ".github/.ThemeDownloader/scripts/themes.txt")
+          (shopt -s dotglob; sed -i '/preview/d' ".github/.ThemeDownloader/scripts/themes.txt")
 
       - name: Push files to the github, replacing the previous
         run: |

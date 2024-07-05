@@ -111,7 +111,7 @@ jobs:
           
       - name: Push scripts to the secret folder
         run: |
-          (shopt -s dotglob; cp /tmp/scripts/* ".github/scripts/")
+          (shopt -s dotglob; cp /tmp/scripts/* ".github/.ThemeDownloader/themes/")
 
       - name: Delete placeholder credits file
         run: |

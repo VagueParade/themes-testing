@@ -1,11 +1,11 @@
 #!/bin/sh 
  
 URL="https://github.com/MustardOS/theme/releases/latest/download/Retro.Glow.Light.Blue.zip"
-THEME_NAME="Retro%20Glow%20Light%20Blue"
-LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Retro%20Glow%20Light%20Blue.zip"
-LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Retro%20Glow%20Light%20Blue.png"
-ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Retro%20Glow%20Light%20Blue.zip"
-SH_NAME="Retro%20Glow%20Light%20Blue.sh"
+THEME_NAME="Retro Glow Light Blue"
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Retro Glow Light Blue.zip"
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Retro Glow Light Blue.png"
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Retro Glow Light Blue.zip"
+SH_NAME="Retro Glow Light Blue.sh"
 PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Retro%20Glow%20Light%20Blue.png"
 CREDITS_INFO="by: nico.bass - with muOS Theme Maker" 
  

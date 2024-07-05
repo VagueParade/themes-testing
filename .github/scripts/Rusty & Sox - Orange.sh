@@ -1,11 +1,11 @@
 #!/bin/sh 
  
 URL="https://github.com/MustardOS/theme/releases/latest/download/Rusty.Sox.-.Orange.zip"
-THEME_NAME="Rusty%20&%20Sox%20-%20Orange"
-LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Rusty%20&%20Sox%20-%20Orange.zip"
-LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Rusty%20&%20Sox%20-%20Orange.png"
-ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Rusty%20&%20Sox%20-%20Orange.zip"
-SH_NAME="Rusty%20&%20Sox%20-%20Orange.sh"
+THEME_NAME="Rusty & Sox - Orange"
+LOCAL_ZIP_PATH="/mnt/mmc/MUOS/theme/Rusty & Sox - Orange.zip"
+LOCAL_PREVIEW="/mnt/mmc/MUOS/theme/preview/Rusty & Sox - Orange.png"
+ARCHIVE_ZIP="/mnt/mmc/ARCHIVE/Rusty & Sox - Orange.zip"
+SH_NAME="Rusty & Sox - Orange.sh"
 PREVIEW="https://raw.githubusercontent.com/MustardOS/theme/main/preview/Rusty%20&%20Sox%20-%20Orange.png"
 CREDITS_INFO="by: Game Over Jay" 
  

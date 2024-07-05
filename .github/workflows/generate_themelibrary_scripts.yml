@@ -145,17 +145,17 @@ jobs:
           fi
           done
 
+      - name: Scripts - Zip these combo files so that the download to the device is speedy - unzip on device
+        run:
+          (shopt -s dotglob; cd ".github/.ThemeDownloader/themes/" && zip "Previews.zip" "*.png")
+          
       - name: Previews - Zip these combo files so that the download to the device is speedy - unzip on device
         run:
-          (shopt -s dotglob; zip ".github/.ThemeDownloader/previews/Previews.zip" ".github/.ThemeDownloader/previews/*.png")
+          (shopt -s dotglob; zip ".github/.ThemeDownloader/previews/Previews.zip" ".github/.ThemeDownloader/previews/*")
 
       - name: Credits - Zip these combo files so that the download to the device is speedy - unzip on device
         run:
-          (shopt -s dotglob; zip ".github/.ThemeDownloader/credits/Credits.zip" ".github/.ThemeDownloader/credits/*.txt") 
- 
-      - name: Scripts - Zip these combo files so that the download to the device is speedy - unzip on device
-        run:
-          (shopt -s dotglob; zip ".github/.ThemeDownloader/themes/Previews.zip" ".github/.ThemeDownloader/themes/*.sh")
+          (shopt -s dotglob; zip ".github/.ThemeDownloader/credits/Credits.zip" ".github/.ThemeDownloader/credits/*") 
 
       - name: Push files to the github, replacing the previous
         run: |

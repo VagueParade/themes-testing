@@ -117,6 +117,10 @@ jobs:
         run: |
           rm preview/credits.txt
 
+      - name: Create complete theme list as txt
+        run: |
+          (shopt -s dotglob; ls -d > ".github/.ThemeDownloader/scripts/complete.txt")
+
       - name: Push files to the github, replacing the previous
         run: |
           git config --global user.name "VagueParade"

@@ -159,15 +159,15 @@ jobs:
 
       - name: Non-zip cleanup
         run:
-          (shopt -s dotglob; rm ".github/.ThemeDownloader/credits/*.txt")
+          (shopt -s dotglob; cd ".github/.ThemeDownloader/credits/" && rm *.txt)
 
       - name: Non-zip cleanup
         run:
-          (shopt -s dotglob; rm ".github/.ThemeDownloader/previews/*.png")
+          (shopt -s dotglob; cd ".github/.ThemeDownloader/previews/" && rm *.png)
 
       - name: Non-zip cleanup
         run:
-          (shopt -s dotglob; rm ".github/.ThemeDownloader/themes/*.sh")
+          (shopt -s dotglob; cd ".github/.ThemeDownloader/themes/" && rm *.sh)
 
       - name: Push files to the github, replacing the previous
         run: |

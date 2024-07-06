@@ -157,6 +157,18 @@ jobs:
         run:
           (shopt -s dotglob; cd ".github/.ThemeDownloader/credits/" && zip Credits.zip *.txt)
 
+      - name: Non-zip cleanup
+        run:
+          (shopt -s dotglob; rm ".github/.ThemeDownloader/credits/*.txt")
+
+      - name: Non-zip cleanup
+        run:
+          (shopt -s dotglob; rm ".github/.ThemeDownloader/previews/*.png")
+
+      - name: Non-zip cleanup
+        run:
+          (shopt -s dotglob; rm ".github/.ThemeDownloader/themes/*.sh")
+
       - name: Push files to the github, replacing the previous
         run: |
           git config --global user.name "VagueParade"

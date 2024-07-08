@@ -1,8 +1,9 @@
 Analogue-Arimo
 Analogue
+Animal Crossing OS
 Art Book Next v1
 Art Book Next v2
-Balatro Theme V1
+Balatro OS
 Beanz
 Big Screen
 Blade
@@ -58,6 +59,7 @@ Genki Denki GOGOGO
 GenshinImpact
 GeomOS
 Glass V1
+Golden Sun
 Gruvbox Dark
 Gruvbox Light
 Haze Dark
@@ -67,11 +69,13 @@ High Contrast
 HoennOS
 Homestar Runner
 IcS
+Initial D
 JohtOS
 KantOS
 Kernel
 LCD H
 LCD Plus
+LCD SP - Grid
 LCD SP
 Lappy 486
 Lyxodius Dark Black
@@ -92,14 +96,27 @@ MinUI - SNES
 MinUI - Vertical - Black and White
 MinUI - White and Black
 MustardDex - Bulbasaur
+MustardDex - Charizard
 MustardDex - Charmander
+MustardDex - Charmeleon
+MustardDex - Chikorita
+MustardDex - Croconaw
+MustardDex - Cyndaquil
+MustardDex - Feraligatr
 MustardDex - Gastly
 MustardDex - Gengar
 MustardDex - Haunter
+MustardDex - Ivysaur
+MustardDex - Meganium
 MustardDex - Pichu
 MustardDex - Pikachu
+MustardDex - Quilava
 MustardDex - Raichu
 MustardDex - Squirtle
+MustardDex - Totodile
+MustardDex - Typhlosion
+MustardDex - Venusaur
+MustardDex - Wartortle
 MustardFighter
 New Classic
 Nita
@@ -125,9 +142,11 @@ PS Purple
 PS Red
 PS Silver
 PS Violet
+Persona 4
 Pip-Boy Frameless
 Pip-Boy
 Plexus
+Pokemon Lets Go Pikachu
 Purple Night
 QuiK Dark
 Retro Glow Blue
@@ -166,6 +185,8 @@ Switch muOS Dark Mode H
 Switch muOS Dark Mode Plus
 TakanakaOS
 Tang-o-radient
+Tang-o-roundient A
+Tang-o-roundient B
 TechDweeb
 Terminal
 The Beginning of the End
@@ -173,6 +194,7 @@ TheWitcher3
 TitanUI Color
 TitanUI Dark
 TokyoNightOS
+Turtles
 Vaguely Pixelated
 Verde Dark
 Verde Light
@@ -185,6 +207,7 @@ Windows 95
 Windows XP
 Xmas
 Ye Olde OS
+Yu-Gi-OS
 Yukopi
 Zelda Minish Cap
 dsOS

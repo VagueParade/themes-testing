@@ -81,6 +81,7 @@ Lappy 486
 Lyxodius Dark Black
 Lyxodius Dark Blue
 Lyxodius Dark Grey
+Majora
 Marvel
 MegaMan
 Megaman Battle Network
@@ -233,6 +234,7 @@ muXbox Dark
 muXbox
 mubiOS
 nxOS
+pip-muos
 pipboy-tube
 rgui - Dark
 round_Black

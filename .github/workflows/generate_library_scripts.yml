@@ -16,11 +16,9 @@ jobs:
 
       - name: Checkout repo
         uses: actions/checkout@v4
-        
 # Here's some info! So firstly, the theme table. First text files are generated with the theme table content, with images and credits
 # in each cell. This includes the preview folder, so we create a temporary credits file before deleting the preview cell.
 # There is no need to create a temporary preview/preview.png file as the images are referred to as linked images directly from the preview folder.
-
       - name: Create temporary credits file
         run: |
           echo preview > "preview/credits.txt"

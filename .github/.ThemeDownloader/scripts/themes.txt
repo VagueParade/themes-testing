@@ -1,5 +1,5 @@
-Analogue-Arimo
 Analogue
+Analogue-Arimo
 Animal Crossing OS
 Art Book Next v1
 Art Book Next v2
@@ -43,8 +43,9 @@ GamePal - Night
 GamePal - SnesLight
 GamePal - SnesNight
 GamePal - Sober
-GarstardOS - Black
 GarstardOS
+GarstardOS - Black
+GbOS
 GbOS Color - Amber
 GbOS Color - Black
 GbOS Color - DMG
@@ -54,7 +55,6 @@ GbOS Color - Ruby
 GbOS Color - Sapphire
 GbOS Color - White
 GbOS Minimal
-GbOS
 Genki Denki GOGOGO
 GenshinImpact
 GeomOS
@@ -62,8 +62,8 @@ Glass V1
 Golden Sun
 Gruvbox Dark
 Gruvbox Light
-Haze Dark
 Haze
+Haze Dark
 Hello Kitty
 High Contrast
 HoennOS
@@ -84,8 +84,8 @@ Majora
 Marvel
 MegaMan
 Megaman Battle Network
-Megaman Zero X
 Megaman Zero
+Megaman Zero X
 MinUI - Black and White
 MinUI - FC
 MinUI - GB Dark
@@ -143,8 +143,8 @@ PS Red
 PS Silver
 PS Violet
 Persona 4
-Pip-Boy Frameless
 Pip-Boy
+Pip-Boy Frameless
 Plexus
 Pokemon Lets Go Pikachu
 Purple Night
@@ -161,9 +161,9 @@ RetroWave
 Royal CriMUson
 Royal Dark MU
 Royal Light MU
+Royal MU
 Royal MU Earth
 Royal MU Noir
-Royal MU
 Royal Navy
 Rusty & Sox - Blue
 Rusty & Sox - Green
@@ -201,8 +201,8 @@ Verde Light
 Victoria Bitter
 Vinesauce
 WhitexBlack
-Wiitendo Dark
 Wiitendo
+Wiitendo Dark
 Windows 95
 Windows XP
 Xmas
@@ -213,25 +213,25 @@ Zelda Minish Cap
 breath-of-fire-4-ryx
 dsOS
 mu-rder-OS
-muDS Dark
 muDS
+muDS Dark
 muDeck
 muLCARS
 muOS - Beans
-muOS - Classic Mono
 muOS - Classic
-muOS - Concise-Purple
+muOS - Classic Mono
 muOS - Concise
+muOS - Concise-Purple
 muOS - Horizontal
 muOS - NeXT
 muOS - Pixels
 muOS X - Mountain Lion
-muOScraft - RUS_ver
 muOScraft
+muOScraft - RUS_ver
 muVB
 muXP
-muXbox Dark
 muXbox
+muXbox Dark
 mubiOS
 nxOS
 pip-muos

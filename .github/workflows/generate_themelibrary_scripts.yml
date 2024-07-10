@@ -129,6 +129,10 @@ jobs:
           (shopt -s dotglob; sed -i '/.github/d' ".github/.ThemeDownloader/scripts/themes.txt")
           (shopt -s dotglob; sed -i '/preview/d' ".github/.ThemeDownloader/scripts/themes.txt")
 
+      - name: Sort themes by alphabetical order ignoring case
+        run: |
+          (shopt -s dotglob; sort -o ".github/.ThemeDownloader/scripts/themes.txt" ".github/.ThemeDownloader/scripts/themes.txt") 
+
       - name: Generate credits per theme
         run: |
           for dir in */ ; do dir_name="${dir%/}"

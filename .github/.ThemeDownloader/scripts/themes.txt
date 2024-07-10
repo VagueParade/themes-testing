@@ -211,6 +211,7 @@ Ye Olde OS
 Yu-Gi-OS
 Yukopi
 Zelda Minish Cap
+breath-of-fire-4-ryx
 dsOS
 mu-rder-OS
 muDS Dark

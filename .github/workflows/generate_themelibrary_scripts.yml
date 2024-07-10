@@ -128,10 +128,12 @@ jobs:
           (shopt -s dotglob; sed -i '/.git/d' ".github/.ThemeDownloader/scripts/themesno.txt")
           (shopt -s dotglob; sed -i '/.github/d' ".github/.ThemeDownloader/scripts/themesno.txt")
           (shopt -s dotglob; sed -i '/preview/d' ".github/.ThemeDownloader/scripts/themesno.txt")
+          (shopt -s dotglob; cat ".github/.ThemeDownloader/scripts/themesno.txt")
 
       - name: Sort themes by alphabetical order ignoring case
         run: |
-          (shopt -s dotglob; sort -o ".github/.ThemeDownloader/scripts/themes.txt" ".github/.ThemeDownloader/scripts/themesno.txt") 
+          (shopt -s dotglob; sort ".github/.ThemeDownloader/scripts/themesno.txt" > ".github/.ThemeDownloader/scripts/themes.txt")
+          (shopt -s dotglob; cat ".github/.ThemeDownloader/scripts/themes.txt")
 
       - name: Remove temporary non-alphabetical text file
         run: |

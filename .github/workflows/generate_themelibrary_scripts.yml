@@ -119,7 +119,7 @@ jobs:
 
       - name: Create complete theme list as txt
         run: |
-          (shopt -s dotglob; rm ".github/.ThemeDownloader/scripts/themesno.txt") 
+          (shopt -s dotglob; rm ".github/.ThemeDownloader/scripts/themes.txt") 
           (shopt -s dotglob; touch ".github/.ThemeDownloader/scripts/themesno.txt")
           (shopt -s dotglob; for dir in */; do dir_name="${dir%/}"; echo "${dir_name}" >> ".github/.ThemeDownloader/scripts/themesno.txt"; done)
 

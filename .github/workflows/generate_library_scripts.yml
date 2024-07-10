@@ -159,6 +159,19 @@ jobs:
           fi
           done
 # I found it quicker to download onto the device a full zip and unzipping on the device.
+
+      - name: Remove old zips
+        run: 
+          (shopt -s dotglob; rm ".github/.ThemeDownloader/themes/Scripts.zip") 
+
+      - name: Remove old zips
+        run: 
+          (shopt -s dotglob; rm ".github/.ThemeDownloader/previews/Previews.zip") 
+
+      - name: Remove old zips
+        run: 
+          (shopt -s dotglob; rm ".github/.ThemeDownloader/credits/Credits.zip") 
+          
       - name: Scripts - Zip these combo files so that the download to the device is speedy - unzip on device
         run:
           (shopt -s dotglob; cd ".github/.ThemeDownloader/themes/" && zip Scripts.zip *.sh)

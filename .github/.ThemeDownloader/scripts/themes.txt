@@ -75,7 +75,6 @@ KantOS
 Kernel
 LCD H
 LCD Plus
-LCD SP - Grid
 LCD SP
 Lappy 486
 Lyxodius Dark Black

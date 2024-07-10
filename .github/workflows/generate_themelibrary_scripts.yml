@@ -132,7 +132,7 @@ jobs:
 
       - name: Sort themes by alphabetical order ignoring case
         run: |
-          sort ".github/.ThemeDownloader/scripts/themesno.txt"
+          sort -R ".github/.ThemeDownloader/scripts/themesno.txt" > ".github/.ThemeDownloader/scripts/themes.txt"
           (shopt -s dotglob; cat ".github/.ThemeDownloader/scripts/themes.txt")
 
       - name: Remove temporary non-alphabetical text file

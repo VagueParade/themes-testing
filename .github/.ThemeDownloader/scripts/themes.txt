@@ -1,245 +1,245 @@
-Analogue
-Analogue-Arimo
-Animal Crossing OS
-Art Book Next v1
-Art Book Next v2
-Balatro OS
-Beanz
-Big Screen
-Blade
-Brogrammer-DejaVu
-C64
-Candy
-Catppuccin Frappe
-Cheers
-Circles
-Custom2
-CyberMU
-Cyberpunk Neon
-DOTT
-Dark Dock
-Def not SFC - Dark
-Def not SNES
-Disk Sys
-Dot Matrix - Dark
-Dot Matrix - Green
-Dot Matrix - Mustard
-Dot Matrix - Pink
-DotNdot
-Dracula
-Dreamcast Themecast
-EZF Cobalt
-Eagle Union
-EmulationStation
-FFos
-Fallout Caution
-Faux Dark
-GB Dark
-GB Light
-GamePal - LCDLight
-GamePal - LCDNight
-GamePal - Light
-GamePal - Night
-GamePal - SnesLight
-GamePal - SnesNight
-GamePal - Sober
-GarstardOS
-GarstardOS - Black
-GbOS
-GbOS Color - Amber
-GbOS Color - Black
-GbOS Color - DMG
-GbOS Color - Diamond
-GbOS Color - Obsidian
-GbOS Color - Ruby
-GbOS Color - Sapphire
-GbOS Color - White
-GbOS Minimal
-Genki Denki GOGOGO
-GenshinImpact
-GeomOS
-Glass V1
-Golden Sun
-Gruvbox Dark
-Gruvbox Light
-Haze
-Haze Dark
-Hello Kitty
-High Contrast
-HoennOS
-Homestar Runner
-IcS
-Initial D
-JohtOS
-KantOS
-Kernel
-LCD H
-LCD Plus
-LCD SP
-Lappy 486
-Lyxodius Dark Black
-Lyxodius Dark Blue
-Lyxodius Dark Grey
-Majora
-Marvel
-MegaMan
-Megaman Battle Network
-Megaman Zero
-Megaman Zero X
-MinUI - Black and White
-MinUI - FC
-MinUI - GB Dark
-MinUI - GB Light
-MinUI - NecroPoster
-MinUI - Pink
-MinUI - SNES
-MinUI - Vertical - Black and White
-MinUI - White and Black
-MustardDex - Bulbasaur
-MustardDex - Charizard
-MustardDex - Charmander
-MustardDex - Charmeleon
-MustardDex - Chikorita
-MustardDex - Croconaw
-MustardDex - Cyndaquil
-MustardDex - Feraligatr
-MustardDex - Gastly
-MustardDex - Gengar
-MustardDex - Haunter
-MustardDex - Ivysaur
-MustardDex - Meganium
-MustardDex - Pichu
-MustardDex - Pikachu
-MustardDex - Quilava
-MustardDex - Raichu
-MustardDex - Squirtle
-MustardDex - Totodile
-MustardDex - Typhlosion
-MustardDex - Venusaur
-MustardDex - Wartortle
-MustardFighter
-New Classic
-Nita
-Nokia
-Orange
-Ornata
-POP - Battle Network Blue
-POP - Gandalf Grey
-POP - Not A Phase Black
-POP - Orange Cream
-POP - Particularly Pink
-POP - Taro Purple
-PS Aqua
-PS Black
-PS Blue
-PS Bronze
-PS Candy
-PS Gold
-PS Green
-PS Grey
-PS Orange
-PS Purple
-PS Red
-PS Silver
-PS Violet
-Persona 4
-Pip-Boy
-Pip-Boy Frameless
-Plexus
-Pokemon Lets Go Pikachu
-Purple Night
-QuiK Dark
-Retro Glow Blue
-Retro Glow Classic
-Retro Glow Green
-Retro Glow Light Blue
-Retro Glow Pink
-Retro Glow Red
-Retro Glow Yellow
-RetroComic
-RetroWave
-Royal CriMUson
 Royal Dark MU
-Royal Light MU
-Royal MU
-Royal MU Earth
-Royal MU Noir
-Royal Navy
-Rusty & Sox - Blue
-Rusty & Sox - Green
-Rusty & Sox - Orange
-Rusty & Sox - Pink
-Rusty & Sox - Purple
-Rusty & Sox - Red
-Rusty & Sox - White
-SA2
-SOTN
-SSBM v1
-SayOS
-Sinapis Light
-Skyrim
-StageSelect
-Star Wars
-Street Fighter
-Switch muOS Dark Mode H
-Switch muOS Dark Mode Plus
-TakanakaOS
-Tang-o-radient
-Tang-o-roundient A
+MustardDex - Bulbasaur
+MustardDex - Charmander
+GamePal - LCDLight
+Retro Glow Blue
+PS Orange
 Tang-o-roundient B
-TechDweeb
-Terminal
-The Beginning of the End
-TheWitcher3
 TitanUI Color
-TitanUI Dark
-TokyoNightOS
-Turtles
-Vaguely Pixelated
-Verde Dark
-Verde Light
-Victoria Bitter
-Vinesauce
-WhitexBlack
-Wiitendo
-Wiitendo Dark
-Windows 95
-Windows XP
-Xmas
-Ye Olde OS
-Yu-Gi-OS
-Yukopi
-Zelda Minish Cap
-breath-of-fire-4-ryx
-dsOS
-mu-rder-OS
-muDS
-muDS Dark
-muDeck
-muLCARS
-muOS - Beans
-muOS - Classic
-muOS - Classic Mono
-muOS - Concise
-muOS - Concise-Purple
-muOS - Horizontal
-muOS - NeXT
-muOS - Pixels
-muOS X - Mountain Lion
-muOScraft
-muOScraft - RUS_ver
-muVB
-muXP
-muXbox
-muXbox Dark
-mubiOS
-nxOS
-pip-muos
+Balatro OS
+MustardDex - Squirtle
+Homestar Runner
 pipboy-tube
-rgui - Dark
+POP - Not A Phase Black
+KantOS
+Pip-Boy
+GB Light
+PS Violet
+Rusty & Sox - Green
+SA2
+DotNdot
+Royal MU
+Lyxodius Dark Blue
+Rusty & Sox - Blue
+Kernel
+Dark Dock
+Royal Light MU
+Majora
+MustardDex - Chikorita
+POP - Gandalf Grey
+Gruvbox Dark
+Disk Sys
+Wiitendo
+muOS - NeXT
+C64
+MustardDex - Raichu
+WhitexBlack
+muOS - Classic
+nxOS
+Catppuccin Frappe
+SOTN
+muOS - Classic Mono
+MustardDex - Venusaur
+PS Bronze
+muOS - Pixels
+Vaguely Pixelated
+muOScraft - RUS_ver
+MustardFighter
+LCD SP
+MinUI - GB Light
+SayOS
+GamePal - SnesLight
+PS Silver
+Custom2
 round_Black
+Dracula
+muOS X - Mountain Lion
+Vinesauce
+MustardDex - Typhlosion
+MinUI - Black and White
+GeomOS
+Yukopi
+Star Wars
+DOTT
+Megaman Zero
+muXbox
+Windows XP
+GbOS Color - Diamond
+PS Aqua
+PS Purple
+Beanz
+Pokemon Lets Go Pikachu
 round_GBA
-round_Gradient
+Dot Matrix - Mustard
+FFos
+Wiitendo Dark
+MinUI - NecroPoster
+GbOS Color - Black
+GamePal - SnesNight
+GbOS Color - Amber
+Skyrim
+New Classic
+mubiOS
+IcS
+Def not SFC - Dark
+Haze Dark
+PS Red
+Lappy 486
+Dot Matrix - Green
+LCD Plus
+rgui - Dark
+TitanUI Dark
+Yu-Gi-OS
+Switch muOS Dark Mode H
+Rusty & Sox - Red
+Nokia
+MustardDex - Pikachu
+Genki Denki GOGOGO
+Xmas
+Brogrammer-DejaVu
+Ornata
+Tang-o-roundient A
+MustardDex - Totodile
+muDeck
+Nita
+Rusty & Sox - Orange
+PS Candy
+POP - Battle Network Blue
+Lyxodius Dark Grey
+POP - Orange Cream
+Candy
+Megaman Battle Network
+TokyoNightOS
+MustardDex - Pichu
+PS Green
+GbOS Color - Sapphire
+MustardDex - Charizard
 round_PS
+GbOS Color - DMG
+Orange
+Ye Olde OS
+muVB
+Retro Glow Classic
+GarstardOS
+MustardDex - Haunter
+pip-muos
+MinUI - Vertical - Black and White
+TheWitcher3
+MustardDex - Cyndaquil
+PS Blue
+Persona 4
+GamePal - Night
+Royal Navy
+Royal MU Noir
+GbOS Minimal
+Turtles
+MustardDex - Feraligatr
+Glass V1
+CyberMU
+EmulationStation
+GB Dark
+Analogue-Arimo
+TechDweeb
+Big Screen
+Faux Dark
 sharp_muOS
 vcrOS
+PS Black
+Def not SNES
+Rusty & Sox - Pink
+GbOS Color - Obsidian
+Animal Crossing OS
+dsOS
+MinUI - SNES
+Circles
+Retro Glow Yellow
+Marvel
+GbOS Color - White
+muOScraft
+MustardDex - Gastly
+Pip-Boy Frameless
+POP - Taro Purple
+Switch muOS Dark Mode Plus
+Eagle Union
+StageSelect
+muDS
+Lyxodius Dark Black
+GenshinImpact
+QuiK Dark
+GbOS Color - Ruby
+Tang-o-radient
+Purple Night
+MustardDex - Meganium
+GamePal - Sober
+MinUI - Pink
+muDS Dark
+MustardDex - Charmeleon
+MustardDex - Ivysaur
+muXP
+muXbox Dark
+POP - Particularly Pink
+Golden Sun
+MustardDex - Wartortle
+Blade
+JohtOS
+Cyberpunk Neon
+Verde Dark
+muOS - Concise-Purple
+Art Book Next v2
+Terminal
+Zelda Minish Cap
+GamePal - Light
+muLCARS
+mu-rder-OS
+muOS - Beans
+Windows 95
+Initial D
+The Beginning of the End
+Cheers
+Fallout Caution
+PS Gold
+Rusty & Sox - White
+Sinapis Light
+Art Book Next v1
+MinUI - White and Black
+Retro Glow Green
+SSBM v1
+RetroWave
+MegaMan
+HoennOS
+muOS - Concise
+breath-of-fire-4-ryx
+Rusty & Sox - Purple
+Gruvbox Light
+round_Gradient
+Retro Glow Red
+Dot Matrix - Pink
+RetroComic
+Retro Glow Pink
+Royal MU Earth
+LCD H
+GarstardOS - Black
+muOS - Horizontal
+TakanakaOS
+MinUI - FC
+Megaman Zero X
+Plexus
+Victoria Bitter
+High Contrast
+Street Fighter
+Royal CriMUson
+MinUI - GB Dark
+MustardDex - Quilava
+MustardDex - Croconaw
+Hello Kitty
+EZF Cobalt
+Analogue
+GamePal - LCDNight
+PS Grey
+Dreamcast Themecast
+Verde Light
+Haze
+Retro Glow Light Blue
+GbOS
+Dot Matrix - Dark
+MustardDex - Gengar

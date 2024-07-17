@@ -36,6 +36,7 @@ EZF Cobalt
 Fallout Caution
 Faux Dark
 FFos
+Fullmetal OS
 GamePal - LCDLight
 GamePal - LCDNight
 GamePal - Light
@@ -195,6 +196,7 @@ Royal Light MU
 Royal MU
 Royal MU Earth
 Royal MU Noir
+Royal MU Vice
 Royal Navy
 Rusty & Sox - Blue
 Rusty & Sox - Green

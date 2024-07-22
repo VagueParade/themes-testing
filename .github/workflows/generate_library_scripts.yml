@@ -145,7 +145,7 @@ jobs:
 
       - name: Replace newline with literal \n
         run: |
-          sed 's/$/\\n/' ".github/.ThemeDownloader/scripts/themes.txt" | tr -d '\n'
+          sed -i 's/$/\\n/' ".github/.ThemeDownloader/scripts/themes.txt" | tr -d '\n'
           
 # Hoping to use the following action to show credits per theme within the app.
       - name: Generate credits per theme

@@ -136,8 +136,8 @@ jobs:
 
       - name: Sort themes by alphabetical order ignoring case
         run: |
-          sort -f ".github/.ThemeDownloader/scripts/themesno.txt" > ".github/.ThemeDownloader/scripts/themes.txt"
-          (shopt -s dotglob; cat ".github/.ThemeDownloader/scripts/themes.txt")
+          sort -f ".github/.ThemeDownloader/scripts/themesno.txt" > ".github/.ThemeDownloader/scripts/themesyes.txt"
+          (shopt -s dotglob; cat ".github/.ThemeDownloader/scripts/themesyes.txt")
 
       - name: Remove temporary non-alphabetical text file
         run: |
@@ -145,8 +145,11 @@ jobs:
 
       - name: Replace newline with literal \n
         run: |
-          sed -i 's/$/\\n/' ".github/.ThemeDownloader/scripts/themes.txt" | tr -d '\n'
-          
+          sed 's/$/\\n/' ".github/.ThemeDownloader/scripts/themesyes.txt" | tr -d '\n' >> ".github/.ThemeDownloader/scripts/themes.txt"
+     
+      - name: Remove temporary non-alphabetical text file
+        run: |
+          (shopt -s dotglob; rm ".github/.ThemeDownloader/scripts/themesyes.txt")          
 # Hoping to use the following action to show credits per theme within the app.
       - name: Generate credits per theme
         run: |

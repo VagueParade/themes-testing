@@ -110,6 +110,7 @@ muOS - Classic Mono
 muOS - Concise
 muOS - Concise-Purple
 muOS - Horizontal
+muOS - Mup
 muOS - NeXT
 muOS - Pixels
 muOS X - Mountain Lion

@@ -21,7 +21,7 @@ jobs:
 # There is no need to create a temporary preview/preview.png file as the images are referred to as linked images directly from the preview folder.
       - name: Show files
         run: |
-          ls -a Analogue-Arimo
+          ls -a Analogue-Arimo/scheme
         
       - name: Do it
         run: |

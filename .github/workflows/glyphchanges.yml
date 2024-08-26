@@ -1,4 +1,4 @@
-name: Font Change
+name: Glyph Changes
 
 on: workflow_dispatch
 
@@ -19,86 +19,38 @@ jobs:
 
       - name: Do it for one!
         run: |
-          for dir in */; do dir_name="${dir%/}"
-          if [[ "${dir_name}" != preview  ]] ; then
-          (cd "${dir_name}/scheme"
+          cd "Analogue/scheme"
           for file in *; do
-          if grep -q FONT_HEADER_PAD_TOP= "$file"; then
-          lineno=$(awk '/FONT_HEADER_PAD_TOP=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_HEADER_PAD_TOP=.*/FONT_HEADER_PAD_TOP=0/" "$file"
-          fi 
-          if grep -q FONT_HEADER_PAD_BOTTOM= "$file"; then
-          lineno=$(awk '/FONT_HEADER_PAD_BOTTOM=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_HEADER_PAD_BOTTOM=.*/FONT_HEADER_PAD_BOTTOM=0/" "$file"
-          fi
-          if grep -q FONT_HEADER_ICON_PAD_TOP= "$file"; then
-          lineno=$(awk '/FONT_HEADER_ICON_PAD_TOP=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_HEADER_ICON_PAD_TOP=.*/FONT_HEADER_ICON_PAD_TOP=0/" "$file"
-          fi 
-          if grep -q FONT_HEADER_ICON_PAD_BOTTOM= "$file"; then
-          lineno=$(awk '/FONT_HEADER_ICON_PAD_BOTTOM=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_HEADER_ICON_PAD_BOTTOM=.*/FONT_HEADER_ICON_PAD_BOTTOM=0/" "$file"
-          fi 
-          if grep -q FONT_FOOTER_PAD_TOP= "$file"; then
-          lineno=$(awk '/FONT_FOOTER_PAD_TOP=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_FOOTER_PAD_TOP=.*/FONT_FOOTER_PAD_TOP=0/" "$file"
-          fi
-          if grep -q FONT_FOOTER_PAD_BOTTOM= "$file"; then
-          lineno=$(awk '/FONT_FOOTER_PAD_BOTTOM=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_FOOTER_PAD_BOTTOM=.*/FONT_FOOTER_PAD_BOTTOM=0/" "$file"
-          fi 
-          if grep -q FONT_FOOTER_ICON_PAD_TOP= "$file"; then
-          lineno=$(awk '/FONT_FOOTER_ICON_PAD_TOP=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_FOOTER_ICON_PAD_TOP=.*/FONT_FOOTER_ICON_PAD_TOP=0/" "$file"
-          fi 
-          if grep -q FONT_FOOTER_ICON_PAD_BOTTOM= "$file"; then
-          lineno=$(awk '/FONT_FOOTER_ICON_PAD_BOTTOM=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_FOOTER_ICON_PAD_BOTTOM=.*/FONT_FOOTER_ICON_PAD_BOTTOM=0/" "$file"
-          fi 
-          if grep -q FONT_MESSAGE_PAD_TOP= "$file"; then
-          lineno=$(awk '/FONT_MESSAGE_PAD_TOP=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_MESSAGE_PAD_TOP=.*/FONT_MESSAGE_PAD_TOP=0/" "$file"
-          fi 
-          if grep -q FONT_MESSAGE_PAD_BOTTOM= "$file"; then
-          lineno=$(awk '/FONT_MESSAGE_PAD_BOTTOM=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_MESSAGE_PAD_BOTTOM=.*/FONT_MESSAGE_PAD_BOTTOM=0/" "$file"
-          fi 
-          if grep -q FONT_LIST_PAD_TOP= "$file"; then
-          lineno=$(awk '/FONT_LIST_PAD_TOP=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_LIST_PAD_TOP=.*/FONT_LIST_PAD_TOP=0/" "$file"
-          fi 
-          if grep -q FONT_LIST_PAD_BOTTOM= "$file"; then
-          lineno=$(awk '/FONT_LIST_PAD_BOTTOM=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_LIST_PAD_BOTTOM=.*/FONT_LIST_PAD_BOTTOM=0/" "$file"
-          fi 
-          if grep -q FONT_LIST_ICON_PAD_TOP= "$file"; then
-          lineno=$(awk '/FONT_LIST_ICON_PAD_TOP=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_LIST_ICON_PAD_TOP=.*/FONT_LIST_ICON_PAD_TOP=0/" "$file"
-          fi 
-          if grep -q FONT_LIST_ICON_PAD_BOTTOM= "$file"; then
-          lineno=$(awk '/FONT_LIST_ICON_PAD_BOTTOM=/{print NR}' "$file")
-          echo $lineno
-          sed -i "${lineno}s/.*FONT_LIST_ICON_PAD_BOTTOM=.*/FONT_LIST_ICON_PAD_BOTTOM=0/" "$file"
-          fi 
-          if grep -q IDIOT "$file"; then
-          echo "Found IDIOT!"
-          fi 
-          done)
+          if grep -q LIST_DEFAULT_TEXT_ALPHA=0 "$file"; then
+          lineno=$(awk '/LIST_DEFAULT_TEXT_ALPHA=0/{print NR}' "$file")
+          sed -i "${lineno} i LIST_DEFAULT_GLYPH_ALPHA=0" "$file"
+          sed -i "${lineno} i LIST_FOCUS_GLYPH_ALPHA=0" "$file"
+          else
+          lineno=$(awk '/LIST_DEFAULT_TEXT_ALPHA/{print NR}' "$file")
+          sed -i "${lineno} i LIST_DEFAULT_GLYPH_ALPHA=255" "$file"
+          sed -i "${lineno} i LIST_FOCUS_GLYPH_ALPHA=255" "$file"
+          sed -i "${lineno} i LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA=255" "$file"
+          sed -i "${lineno} i LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255" "$file"
+          linenom=$(awk '/LIST_DEFAULT_TEXT=/{print NR}' "$file")
+          defhex=$(sed "${linenom}s/.*(......)/\1/" "$file")
+          linenomb=$(awk '/LIST_FOCUS_TEXT=/{print NR}' "$file")
+          fochex=$(sed "${linenomb}s/.*(......)/\1/" "$file")
+          sed -i "${linenom} i LIST_DEFAULT_GLYPH_RECOLOUR=${defhex}" "$file"
+          sed -i "${linenomb} i LIST_FOCUS_GLYPH_RECOLOUR=${fochex}" "$file"
           fi
           done
+      #    for dir in */; do dir_name="${dir%/}"
+      #    if [[ "${dir_name}" != preview  ]] ; then
+      #    (cd "${dir_name}/scheme"
+      #    for file in *; do
+      #    if grep -q FONT_HEADER_PAD_TOP= "$file"; then
+      #    lineno=$(awk '/FONT_HEADER_PAD_TOP=/{print NR}' "$file")
+      #    echo $lineno
+      #    sed -i "${lineno}s/.*FONT_HEADER_PAD_TOP=.*/FONT_HEADER_PAD_TOP=0/" "$file"
+      #    fi
+      #    done)
+      #    fi
+      #    done
         
      # - name: Do it
      #   run: |
@@ -115,6 +67,6 @@ jobs:
           git config --global user.email "166325657+VagueParade@users.noreply.github.com"
 
           git add -A
-          git commit -m "Font changes"
+          git commit -m "Glyph changes"
           git push
           

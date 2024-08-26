@@ -35,11 +35,11 @@ jobs:
           sed -i "${lineno}i LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255" "$file"
           linenom=$(awk '/LIST_DEFAULT_TEXT=/ { ln = FNR } END { print ln }' "$file")
           echo "default hex line number is ${linenom}. start finding hexcode"
-          defhex=$(sed "${linenom}s/.*(......)/\1/" "$file")
+          defhex=$(sed -E "${linenom}s/.*(......)/\1/" "$file")
           echo "hex code is ${defhex}. start finding focus line"
           linenomb=$(awk '/LIST_FOCUS_TEXT=/ { ln = FNR } END { print ln }' "$file")
           echo "focus line is ${linenomb}. find focus hex code"
-          fochex=$(sed "${linenomb}s/.*(......)/\1/" "$file")
+          fochex=$(sed -E "${linenomb}s/.*(......)/\1/" "$file")
           echo "focus hex code is ${fochex}"
           sed -i "${linenom}i LIST_DEFAULT_GLYPH_RECOLOUR=${defhex}" "$file"
           sed -i "${linenomb}i LIST_FOCUS_GLYPH_RECOLOUR=${fochex}" "$file"

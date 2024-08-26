@@ -27,8 +27,44 @@ jobs:
           if grep -q FONT_HEADER_PAD_BOTTOM= "$file"; then
           echo "Found FONT_HEADER_PAD_BOTTOM=!"
           fi
-          if grep -q FONT_HEADER123 "$file"; then
-          echo "Found FONT_HEADER123!"
+          if grep -q FONT_HEADER_ICON_PAD_TOP= "$file"; then
+          echo "Found FONT_HEADER_ICON_PAD_TOP=!"
+          fi 
+          if grep -q FONT_HEADER_ICON_PAD_BOTTOM= "$file"; then
+          echo "Found FONT_HEADER_ICON_PAD_BOTTOM=!"
+          fi 
+          if grep -q FONT_FOOTER_PAD_TOP= "$file"; then
+          echo "Found FONT_FOOTER_PAD_TOP=!"
+          fi
+          if grep -q FONT_FOOTER_PAD_BOTTOM= "$file"; then
+          echo "Found FONT_FOOTER_PAD_BOTTOM=!"
+          fi 
+          if grep -q FONT_FOOTER_ICON_PAD_TOP= "$file"; then
+          echo "Found FONT_FOOTER_ICON_PAD_TOP=!"
+          fi 
+          if grep -q FONT_FOOTER_ICON_PAD_BOTTOM= "$file"; then
+          echo "Found FONT_FOOTER_ICON_PAD_BOTTOM=!"
+          fi 
+          if grep -q FONT_MESSAGE_PAD_TOP= "$file"; then
+          echo "Found FONT_MESSAGE_PAD_TOP=!"
+          fi 
+          if grep -q FONT_MESSAGE_PAD_BOTTOM= "$file"; then
+          echo "Found FONT_MESSAGE_PAD_BOTTOM=!"
+          fi 
+          if grep -q FONT_LIST_PAD_TOP= "$file"; then
+          echo "Found FONT_LIST_PAD_TOP=!"
+          fi 
+          if grep -q FONT_LIST_PAD_BOTTOM= "$file"; then
+          echo "Found FONT_LIST_PAD_BOTTOM=!"
+          fi 
+          if grep -q FONT_LIST_ICON_PAD_TOP= "$file"; then
+          echo "Found FONT_LIST_ICON_PAD_TOP=!"
+          fi 
+          if grep -q FONT_LIST_ICON_PAD_BOTTOM= "$file"; then
+          echo "Found FONT_LIST_ICON_PAD_BOTTOM=!"
+          fi 
+          if grep -q IDIOT "$file"; then
+          echo "Found IDIOT!"
           fi 
           done
         

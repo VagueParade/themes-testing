@@ -23,20 +23,20 @@ jobs:
           for file in *; do
           if grep -q LIST_DEFAULT_TEXT_ALPHA=0 "$file"; then
           lineno=$(awk '/LIST_DEFAULT_TEXT_ALPHA=0/{print NR}' "$file")
-          sed -i '${lineno} i LIST_DEFAULT_GLYPH_ALPHA=0' "$file"
-          sed -i '${lineno} i LIST_FOCUS_GLYPH_ALPHA=0' "$file"
+          sed -i "${lineno} i LIST_DEFAULT_GLYPH_ALPHA=0" "$file"
+          sed -i "${lineno} i LIST_FOCUS_GLYPH_ALPHA=0" "$file"
           else
           lineno=$(awk '/LIST_DEFAULT_TEXT_ALPHA/{print NR}' "$file")
-          sed -i '${lineno} i LIST_DEFAULT_GLYPH_ALPHA=255' "$file"
-          sed -i '${lineno} i LIST_FOCUS_GLYPH_ALPHA=255' "$file"
-          sed -i '${lineno} i LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA=255' "$file"
-          sed -i '${lineno} i LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255' "$file"
-          linenom=$(awk '/LIST_DEFAULT_TEXT=/{print NR}' "$file")
-          defhex=$(sed '${linenom}s/.*(......)/\1/' "$file")
-          linenomb=$(awk '/LIST_FOCUS_TEXT=/{print NR}' "$file")
-          fochex=$(sed '${linenomb}s/.*(......)/\1/' "$file")
-          sed -i '${linenom} i LIST_DEFAULT_GLYPH_RECOLOUR=${defhex}' "$file"
-          sed -i '${linenomb} i LIST_FOCUS_GLYPH_RECOLOUR=${fochex}' "$file"
+          sed -i "${lineno} i LIST_DEFAULT_GLYPH_ALPHA=255" "$file"
+          sed -i "${lineno} i LIST_FOCUS_GLYPH_ALPHA=255" "$file"
+          sed -i "${lineno} i LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA=255" "$file"
+          sed -i "${lineno} i LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255" "$file"
+    #      linenom=$(awk '/LIST_DEFAULT_TEXT=/{print NR}' "$file")
+    #      defhex=$(sed "${linenom}s/.*(......)/\1/" "$file")
+    #      linenomb=$(awk '/LIST_FOCUS_TEXT=/{print NR}' "$file")
+    #      fochex=$(sed "${linenomb}s/.*(......)/\1/" "$file")
+    #      sed -i "${linenom} i LIST_DEFAULT_GLYPH_RECOLOUR=${defhex}" "$file"
+    #      sed -i "${linenomb} i LIST_FOCUS_GLYPH_RECOLOUR=${fochex}" "$file"
           fi
           done
       #    for dir in */; do dir_name="${dir%/}"
@@ -61,12 +61,12 @@ jobs:
      #     done
 
 # And committing it all!
-      - name: Push files to the github, replacing the previous
-        run: |
-          git config --global user.name "VagueParade"
-          git config --global user.email "166325657+VagueParade@users.noreply.github.com"
+  #    - name: Push files to the github, replacing the previous
+  #      run: |
+  #        git config --global user.name "VagueParade"
+  #        git config --global user.email "166325657+VagueParade@users.noreply.github.com"
 
-          git add -A
-          git commit -m "Glyph changes"
-          git push
+  #        git add -A
+  #        git commit -m "Glyph changes"
+  #        git push
           

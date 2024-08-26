@@ -31,14 +31,16 @@ jobs:
           sed -i "${lineno} i LIST_FOCUS_GLYPH_ALPHA=255" "$file"
           sed -i "${lineno} i LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA=255" "$file"
           sed -i "${lineno} i LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255" "$file"
+          fi
+          done
     #      linenom=$(awk '/LIST_DEFAULT_TEXT=/{print NR}' "$file")
     #      defhex=$(sed "${linenom}s/.*(......)/\1/" "$file")
     #      linenomb=$(awk '/LIST_FOCUS_TEXT=/{print NR}' "$file")
     #      fochex=$(sed "${linenomb}s/.*(......)/\1/" "$file")
     #      sed -i "${linenom} i LIST_DEFAULT_GLYPH_RECOLOUR=${defhex}" "$file"
     #      sed -i "${linenomb} i LIST_FOCUS_GLYPH_RECOLOUR=${fochex}" "$file"
-          fi
-          done
+    #      fi
+    #      done
       #    for dir in */; do dir_name="${dir%/}"
       #    if [[ "${dir_name}" != preview  ]] ; then
       #    (cd "${dir_name}/scheme"

@@ -34,12 +34,16 @@ jobs:
           sed -i "${lineno}i LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA=255" "$file"
           sed -i "${lineno}i LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255" "$file"
           linenom=$(awk '/LIST_DEFAULT_TEXT=/ { ln = FNR } END { print ln }' "$file")
-          echo "default hex line number is ${linenom}. start finding hexcode"
-          defhex=$(sed -E "${linenom}s/.*(......)/\1/" "$file")
+          echo "default hex line number is ${linenom}. get line contents"
+          deflinecont=$(sed -n '${linenom}p')
+          echo "default line is ${deflinecont}. get default hexcode"
+          defhex=$(sed -E "s/.*(......)/\1/" "${deflinecont}")
           echo "hex code is ${defhex}. start finding focus line"
           linenomb=$(awk '/LIST_FOCUS_TEXT=/ { ln = FNR } END { print ln }' "$file")
-          echo "focus line is ${linenomb}. find focus hex code"
-          fochex=$(sed -E "${linenomb}s/.*(......)/\1/" "$file")
+          echo "focus line is ${linenomb}. find focus line contents"
+          foclinecont=$(sed -n '${linenomb}p')
+          echo "focus line is ${foclinecont}. get focus hexcode"
+          fochex=$(sed -E "s/.*(......)/\1/" "${foclinecont}")
           echo "focus hex code is ${fochex}"
           sed -i "${linenom}i LIST_DEFAULT_GLYPH_RECOLOUR=${defhex}" "$file"
           sed -i "${linenomb}i LIST_FOCUS_GLYPH_RECOLOUR=${fochex}" "$file"

@@ -37,16 +37,14 @@ jobs:
           echo "default hex line number is ${linenom}. get line contents"
           deflinecont=$(sed -n "${linenom}p" "$file")
           echo "default line is ${deflinecont}. get default hexcode"
-          defhex=$(${deflinecont: -6})
-          echo "hex code is ${defhex}. start finding focus line"
+          echo "hex code is ${deflinecont: -6}. start finding focus line"
           linenomb=$(awk '/LIST_FOCUS_TEXT=/ { ln = FNR } END { print ln }' "$file")
           echo "focus line is ${linenomb}. find focus line contents"
           foclinecont=$(sed -n "${linenomb}p" "$file")
           echo "focus line is ${foclinecont}. get focus hexcode"
-          fochex=$(${foclinecont: -6})
-          echo "focus hex code is ${fochex}"
-          sed -i "${linenom}i LIST_DEFAULT_GLYPH_RECOLOUR=${defhex}" "$file"
-          sed -i "${linenomb}i LIST_FOCUS_GLYPH_RECOLOUR=${fochex}" "$file"
+          echo "focus hex code is ${foclinecont: -6}"
+          sed -i "${linenom}i LIST_DEFAULT_GLYPH_RECOLOUR=${deflinecont: -6}" "$file"
+          sed -i "${linenomb}i LIST_FOCUS_GLYPH_RECOLOUR=${foclinecont: -6}" "$file"
           echo "success!"
           fi
           done

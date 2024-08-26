@@ -26,6 +26,7 @@ jobs:
           sed -i "${lineno} i LIST_DEFAULT_GLYPH_ALPHA=0" "$file"
           sed -i "${lineno} i LIST_FOCUS_GLYPH_ALPHA=0" "$file"
           else
+          echo "no"
           fi
           done
     #      lineno=$(awk '/LIST_DEFAULT_TEXT_ALPHA/{print NR}' "$file")

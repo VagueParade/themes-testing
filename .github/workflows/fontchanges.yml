@@ -22,7 +22,8 @@ jobs:
           cd "Analogue/scheme"
           for file in *; do
           if grep -q FONT_HEADER_PAD_TOP= "$file"; then
-          echo "Found FONT_HEADER_PAD_TOP=!"
+          lineno=$(awk '/FONT_HEADER_PAD_TOP=/{print NR}' "$file")
+          echo $lineno
           fi 
           if grep -q FONT_HEADER_PAD_BOTTOM= "$file"; then
           echo "Found FONT_HEADER_PAD_BOTTOM=!"

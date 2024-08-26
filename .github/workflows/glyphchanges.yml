@@ -19,7 +19,7 @@ jobs:
 
       - name: Do it for one!
         run: |
-          cd "Analogue/scheme"
+          cd "Majora/scheme"
           for file in *; do
           if grep -q LIST_DEFAULT_TEXT_ALPHA=0 "$file"; then
           linenor=$(awk '/LIST_DEFAULT_TEXT_ALPHA=0/ { ln = FNR } END { print ln }' "$file")

@@ -22,10 +22,10 @@ jobs:
           cd "Analogue/scheme"
           for file in *; do
           if grep -q LIST_DEFAULT_TEXT_ALPHA=0 "$file"; then
-          lineno=$(awk '/LIST_DEFAULT_TEXT_ALPHA=0/{print NR}' "$file")
+          linenor=$(awk '/LIST_DEFAULT_TEXT_ALPHA=0/{print NR}' "$file")
           echo $lineno
-          sed -i "${lineno}i LIST_DEFAULT_GLYPH_ALPHA=0" "$file"
-          sed -i "${lineno}i LIST_FOCUS_GLYPH_ALPHA=0" "$file"
+          sed -i "${linenor}i LIST_DEFAULT_GLYPH_ALPHA=0" "$file"
+          sed -i "${linenor}i LIST_FOCUS_GLYPH_ALPHA=0" "$file"
           else
           lineno=$(awk '/LIST_DEFAULT_TEXT_ALPHA/{print NR}' "$file")
           echo $lineno

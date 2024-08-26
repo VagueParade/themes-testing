@@ -26,6 +26,9 @@ jobs:
           fi 
           if grep -q FONT_HEADER_PAD_BOTTOM= "$file"; then
           echo "Found FONT_HEADER_PAD_BOTTOM=!"
+          fi
+          if grep -q FONT_HEADER123 "$file"; then
+          echo "Found FONT_HEADER123!"
           fi 
           done
         

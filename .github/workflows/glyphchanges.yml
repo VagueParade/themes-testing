@@ -22,27 +22,28 @@ jobs:
           cd "Analogue/scheme"
           for file in *; do
           if grep -q LIST_DEFAULT_TEXT_ALPHA=0 "$file"; then
-          linenor=$(awk '/LIST_DEFAULT_TEXT_ALPHA=0/{print NR}' "$file")
-          echo $linenor
+          linenor=$(awk '/LIST_DEFAULT_TEXT_ALPHA=0/ { ln = FNR } END { print ln }' "$file")
+          echo "invisible menu. linenor is ${linenor}"
           sed -i "${linenor}i LIST_DEFAULT_GLYPH_ALPHA=0" "$file"
           sed -i "${linenor}i LIST_FOCUS_GLYPH_ALPHA=0" "$file"
           else
-          lineno=$(awk '/LIST_DEFAULT_TEXT_ALPHA/{print NR}' "$file")
-          echo $lineno
+          lineno=$(awk '/LIST_DEFAULT_TEXT_ALPHA/ { ln = FNR } END { print ln }' "$file")
+          echo "visible menu. lineno is ${lineno}. start inserting glyph"
           sed -i "${lineno}i LIST_DEFAULT_GLYPH_ALPHA=255" "$file"
           sed -i "${lineno}i LIST_FOCUS_GLYPH_ALPHA=255" "$file"
           sed -i "${lineno}i LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA=255" "$file"
           sed -i "${lineno}i LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255" "$file"
-          linenom=$(awk '/LIST_DEFAULT_TEXT=/{print NR}' "$file")
-          echo $linenom
+          linenom=$(awk '/LIST_DEFAULT_TEXT=/ { ln = FNR } END { print ln }' "$file")
+          echo "default hex line number is ${linenom}. start finding hexcode"
           defhex=$(sed "${linenom}s/.*(......)/\1/" "$file")
-          echo $defhex
-          linenomb=$(awk '/LIST_FOCUS_TEXT=/{print NR}' "$file")
-          echo $linenomb
+          echo "hex code is ${defhex}. start finding focus line"
+          linenomb=$(awk '/LIST_FOCUS_TEXT=/ { ln = FNR } END { print ln }' "$file")
+          echo "focus line is ${linenomb}. find focus hex code"
           fochex=$(sed "${linenomb}s/.*(......)/\1/" "$file")
-          echo $fochex
+          echo "focus hex code is ${fochex}"
           sed -i "${linenom}i LIST_DEFAULT_GLYPH_RECOLOUR=${defhex}" "$file"
           sed -i "${linenomb}i LIST_FOCUS_GLYPH_RECOLOUR=${fochex}" "$file"
+          echo "success!"
           fi
           done
       #    for dir in */; do dir_name="${dir%/}"

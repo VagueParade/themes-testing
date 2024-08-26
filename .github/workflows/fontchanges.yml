@@ -19,7 +19,9 @@ jobs:
 
       - name: Do it for one!
         run: |
-          cd "Analogue/scheme"
+          for dir in */; do dir_name="${dir%/}"
+          if [[ "${dir_name}" != preview  ]] ; then
+          (cd "${dir_name}/scheme"
           for file in *; do
           if grep -q FONT_HEADER_PAD_TOP= "$file"; then
           lineno=$(awk '/FONT_HEADER_PAD_TOP=/{print NR}' "$file")
@@ -94,6 +96,8 @@ jobs:
           if grep -q IDIOT "$file"; then
           echo "Found IDIOT!"
           fi 
+          done)
+          fi
           done
         
      # - name: Do it

@@ -19,7 +19,9 @@ jobs:
 
       - name: Do it for one!
         run: |
-          cd "Majora/scheme"
+          for dir in */; do dir_name="${dir%/}"
+          if [[ "${dir_name}" != preview  ]] ; then
+          (cd "${dir_name}/scheme"
           for file in *; do
           if grep -q LIST_DEFAULT_TEXT_ALPHA=0 "$file"; then
           linenor=$(awk '/LIST_DEFAULT_TEXT_ALPHA=0/ { ln = FNR } END { print ln }' "$file")
@@ -50,6 +52,8 @@ jobs:
           echo "success!"
           echo "$file"
           fi
+          done)
+          fi
           done
       #    for dir in */; do dir_name="${dir%/}"
       #    if [[ "${dir_name}" != preview  ]] ; then
@@ -72,13 +76,13 @@ jobs:
      #     fi
      #     done
 
-# And committing it all!
-  #    - name: Push files to the github, replacing the previous
-  #      run: |
-  #        git config --global user.name "VagueParade"
-  #        git config --global user.email "166325657+VagueParade@users.noreply.github.com"
+ And committing it all!
+      - name: Push files to the github, replacing the previous
+        run: |
+          git config --global user.name "VagueParade"
+          git config --global user.email "166325657+VagueParade@users.noreply.github.com"
 
-  #        git add -A
-  #        git commit -m "Glyph changes"
-  #        git push
+          git add -A
+          git commit -m "Glyph changes"
+          git push
           

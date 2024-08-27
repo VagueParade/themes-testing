@@ -26,6 +26,8 @@ jobs:
           echo "invisible menu. linenor is ${linenor}"
           sed -i "${linenor}i LIST_DEFAULT_GLYPH_ALPHA=0" "$file"
           sed -i "${linenor}i LIST_FOCUS_GLYPH_ALPHA=0" "$file"
+          echo "success!"
+          echo "$file"
           else
           lineno=$(awk '/LIST_DEFAULT_TEXT_ALPHA/ { ln = FNR } END { print ln }' "$file")
           echo "visible menu. lineno is ${lineno}. start inserting glyph"
@@ -46,6 +48,7 @@ jobs:
           sed -i "${linenom}i LIST_DEFAULT_GLYPH_RECOLOUR=${deflinecont: -6}" "$file"
           sed -i "${linenomb}i LIST_FOCUS_GLYPH_RECOLOUR=${foclinecont: -6}" "$file"
           echo "success!"
+          echo "$file"
           fi
           done
       #    for dir in */; do dir_name="${dir%/}"

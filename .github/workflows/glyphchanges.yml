@@ -76,7 +76,7 @@ jobs:
      #     fi
      #     done
 
- And committing it all!
+# And committing it all!
       - name: Push files to the github, replacing the previous
         run: |
           git config --global user.name "VagueParade"

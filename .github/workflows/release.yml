@@ -21,27 +21,16 @@ jobs:
 # Create theme archives here! Zipping everything together and creating a complete theme archive.
       - name: Zip directories
         run: |
-          mkdir -p /tmp/release/mnt/mmc/MUOS/theme && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/mnt/mmc/MUOS/theme/${dir_name}.zip" *); done
-# Delete this zip as it is not wanted as a zipping theme.
-      - name: Delete preview zip
-        run: |
-          rm /tmp/release/mnt/mmc/MUOS/theme/preview.zip
-# Add preview image folder to show it off in the Theme Picker.
-      - name: Add preview folder to complete archive
-        run: |
-          mv preview /tmp/release/mnt/mmc/MUOS/theme
-# Create the archive!          
-      - name: Zip mnt folder
-        run: |
-          (cd /tmp/release && zip -r @_Complete_Theme_Archive.zip mnt)
+          mkdir -p /tmp/release/run/muos/storage/theme && for dir in */; do dir_name="${dir%/}"; (cd "$dir_name" && zip -qq -r "/tmp/release/${dir_name}.zip" *); done
 
-      - name: Create individual archive managers
+      - name: Copy zips to complete archive zip format
         run: |
-          for dir in */; do dir_name="${dir%/}"; (cd /tmp/release && zip -r "${dir_name}.zip" . -i "/mnt/mmc/MUOS/theme/${dir_name}.zip"); done
-     
-      - name: Insert preview images in the individual archives
+          cp -a /tmp/release/*.zip /tmp/release/run/muos/storage/theme/
+          
+# Create the archive!          
+      - name: Zip complete folder
         run: |
-          for dir in */; do dir_name="${dir%/}"; (cd /tmp/release && zip -r "${dir_name}.zip" . -i "/mnt/mmc/MUOS/theme/preview/${dir_name}.png"); done
+          (cd /tmp/release && zip -r @_Complete_Theme_Archive.zip run)
      
       - name: List archives
         run: |
@@ -69,7 +58,7 @@ jobs:
       - name: Prepare Release
         uses: ncipollo/release-action@v1.14.0
         with:
-          name: "All Themes - Archive Manager"
+          name: "All Themes"
           tag: "${{steps.date.outputs.date}}"
           allowUpdates: true
           draft: true
@@ -82,7 +71,7 @@ jobs:
       - name: Publish Release
         uses: ncipollo/release-action@v1.14.0
         with:
-          name: "All Themes - Archive Manager"
+          name: "All Themes"
           tag: "${{steps.date.outputs.date}}"
           omitBodyDuringUpdate: true
           omitNameDuringUpdate: true
